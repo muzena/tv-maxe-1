@@ -1,0 +1,1330 @@
+# Croatian translation of freetuxtv.
+# gogo <trebelnik2@@gmail.com>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tv-maxe\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-07 18:27+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: gogo <trebelnik2@@gmail.com>\n"
+"Language-Team: hr@li.org\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#: ../settingsManager.py:369
+msgid ""
+"Incoming and outgoing ports cannot be the same. Please review your settings."
+msgstr ""
+"Dolazni i odlazni ulaz ne mogu biti jednaki. Promijenite vaše postavke."
+
+#: ../settingsManager.py:370
+msgid "Configuration error"
+msgstr "Greška podešavanja"
+
+#: ../trayIcon.py:70 ../tvmaxe.py:2568 ../tvmaxe.py:2590
+msgid "Show TV-MAXE"
+msgstr "Prikaži TV-MAXE"
+
+#: ../trayIcon.py:77 ../tvmaxe.glade.h:47 ../tvmaxe.py:2575 ../tvmaxe.py:2597
+msgid "Hide TV-MAXE"
+msgstr "Sakrij TV-MAXE"
+
+#: ../tvmaxe.glade.h:1
+msgid "About TV-MAXE"
+msgstr "О TV-MAXU"
+
+#: ../tvmaxe.glade.h:2
+msgid "(c) 2010 - 2014 Ovidiu D. Niţan"
+msgstr "(c) 2010 - 2014 Ovidiu D. Niţan"
+
+#: ../tvmaxe.glade.h:3
+msgid "Watch TV channels for free"
+msgstr "Gledajte TV programe besplatno"
+
+#: ../tvmaxe.glade.h:4
+msgid ""
+"Romanian streams provided by\n"
+"<a href=\"http://streams.magazinmixt.ro\">streams.magazinmixt.ro</a>"
+msgstr ""
+"Rumunjske streamove pruža\n"
+"<a href=\"http://streams.magazinmixt.ro\">streams.magazinmixt.ro</a>"
+
+#: ../tvmaxe.glade.h:6
+msgid ""
+"If you like this application and if you want to support its development,\n"
+"please make a donation."
+msgstr ""
+"Ako vam se sviđa ova aplikacija i ako želite\n"
+"podržati njezin razvoj, molim vas da donirate."
+
+#: ../tvmaxe.glade.h:8
+msgid "copy"
+msgstr "kopiraj"
+
+#: ../tvmaxe.glade.h:9
+msgid "Copy"
+msgstr "Kopiraj"
+
+#: ../tvmaxe.glade.h:10
+msgid "Auto"
+msgstr "Automatski"
+
+#: ../tvmaxe.glade.h:11
+msgid "1:1"
+msgstr "1:1"
+
+#: ../tvmaxe.glade.h:12
+msgid "3:2"
+msgstr "3:2"
+
+#: ../tvmaxe.glade.h:13
+msgid "4:3"
+msgstr "4:3"
+
+#: ../tvmaxe.glade.h:14
+msgid "5:4"
+msgstr "5:4"
+
+#: ../tvmaxe.glade.h:15
+msgid "14:9"
+msgstr "14:9"
+
+#: ../tvmaxe.glade.h:16
+msgid "14:10"
+msgstr "14:10"
+
+#: ../tvmaxe.glade.h:17
+msgid "16:9"
+msgstr "16:9"
+
+#: ../tvmaxe.glade.h:18
+msgid "16:10"
+msgstr "16:10"
+
+#: ../tvmaxe.glade.h:19
+msgid "2.35:1"
+msgstr "2.35:1"
+
+#: ../tvmaxe.glade.h:20 ../tvmaxe.py:2900
+msgid "All"
+msgstr "Svi"
+
+#: ../tvmaxe.glade.h:21
+msgid "Diagnostics"
+msgstr "Dijagnostika"
+
+#: ../tvmaxe.glade.h:22
+msgid ""
+"This utility will check if all the requirements for TV-Maxe are fullfied.\n"
+"Not all requirements are needed for TV-Maxe to work, but\n"
+"some of the iternal components requires special versions of libraries.\n"
+"\n"
+"Press \"Run tests\" button when you're ready.\n"
+msgstr ""
+"Ovaj alat će provjeriti jesu li svi zahtjevi za TV-Maxe ispunjeni.\n"
+"Svi zahtjevi nisu potrebni kako bi TV-Maxe radio, ali neke od\n"
+"unutarnjih komponenta zahtijevaju posebne inačice biblioteka.\n"
+"\n"
+"Pritisnite \"Pokreni test\" tipku kada ste spremni.\n"
+
+#: ../tvmaxe.glade.h:28
+msgid "column"
+msgstr "stupac"
+
+#: ../tvmaxe.glade.h:29
+msgid ""
+"<b>Informations</b>\n"
+"\n"
+"Click on an item in the list to get informations about it."
+msgstr ""
+"<b>Informacije</b>\n"
+"\n"
+"Kliknite na stavku s popisa za više informacija."
+
+#: ../tvmaxe.glade.h:32
+msgid "Run tests"
+msgstr "Pokreni test"
+
+#: ../tvmaxe.glade.h:33
+msgid "Running tests..."
+msgstr "Izvršavanje testova"
+
+#: ../tvmaxe.glade.h:34
+msgid "Schedule this"
+msgstr "Snimi ovo"
+
+#: ../tvmaxe.glade.h:35
+msgid "Select stream"
+msgstr "Odaberi stream"
+
+#: ../tvmaxe.glade.h:36
+msgid "Record stream"
+msgstr "Snimi stream"
+
+#: ../tvmaxe.glade.h:37
+msgid "Select a stream to record"
+msgstr "Odaberite stream za snimanje"
+
+#: ../tvmaxe.glade.h:38
+msgid "TV Guide"
+msgstr "EPG - TV programski vodič"
+
+#: ../tvmaxe.glade.h:39
+msgid "Channel info"
+msgstr "Informacije programa"
+
+#: ../tvmaxe.glade.h:40
+msgid "Remove channel"
+msgstr "Ukloni program"
+
+#: ../tvmaxe.glade.h:41
+msgid "Full screen"
+msgstr "Cijeli zaslon"
+
+#: ../tvmaxe.glade.h:42
+msgid "Video settings"
+msgstr "Video postavke"
+
+#: ../tvmaxe.glade.h:43
+msgid "Audio tracks"
+msgstr "Zvučne postavke"
+
+#: ../tvmaxe.glade.h:44
+msgid "Details"
+msgstr "Pojedinosti"
+
+#: ../tvmaxe.glade.h:45
+msgid "Canale TV"
+msgstr "TV programi"
+
+#: ../tvmaxe.glade.h:46
+msgid "Canale radio"
+msgstr "Radio programi"
+
+#: ../tvmaxe.glade.h:48
+msgid "Stop"
+msgstr "Zaustavi"
+
+#: ../tvmaxe.glade.h:49
+msgid "Close"
+msgstr "Zatvori"
+
+#: ../tvmaxe.glade.h:50
+msgid "Schedule manager"
+msgstr "Upravitelj snimanjem"
+
+#: ../tvmaxe.glade.h:51
+msgid "New item"
+msgstr "Nova stavka"
+
+#: ../tvmaxe.glade.h:52
+msgid "Time"
+msgstr "Vrijeme"
+
+#: ../tvmaxe.glade.h:53
+msgid "Name"
+msgstr "Naziv"
+
+#: ../tvmaxe.glade.h:54
+msgid "Channel"
+msgstr "Program"
+
+#: ../tvmaxe.glade.h:55
+msgid "Schedule"
+msgstr "Snimanje"
+
+#: ../tvmaxe.glade.h:56
+msgid "Show name:"
+msgstr "Naziv emisije"
+
+#: ../tvmaxe.glade.h:57
+msgid "Start time:"
+msgstr "Početak snimanja:"
+
+#: ../tvmaxe.glade.h:58
+msgid "Channel:"
+msgstr "Program:"
+
+#: ../tvmaxe.glade.h:59
+msgid ":"
+msgstr ":"
+
+#: ../tvmaxe.glade.h:60
+msgid ""
+"<b>Please note that your computer must be turned on for this to work.\n"
+"Also, TV-Maxe daemon must be active.</b>"
+msgstr ""
+"<b>Vaše računalo mora biti uključeno kako bi snimanje radilo.\n"
+"Isto tako, TV-Maxe pozadinski program mora biti pokrenut.</b>"
+
+#: ../tvmaxe.glade.h:62
+msgid "Sleep"
+msgstr "Samoisključivanje"
+
+#: ../tvmaxe.glade.h:63
+msgid ""
+"You can set TV-Maxe to close itself and even shut-down your computer\n"
+"after some time, defined below. Please note that the shutdown functionality\n"
+"is only supported on KDE, MATE, Unity, Gnome (Cinnamon) and XFCE."
+msgstr ""
+"Možete postaviti TV-Maxe kako bi se zatvorio čak i kako bi isključio "
+"računalo\n"
+"nakon određenog vremena, zadanog ispod. Funkcija samoisključivanja\n"
+"je podržana samo na KDE, MATE, Unity, Gnome, Cinnamon i XFCE\n"
+"radnim okruženjima."
+
+#: ../tvmaxe.glade.h:66
+msgid "Close TV-Maxe after:"
+msgstr "Zatvori TV-Maxe nakon:"
+
+#: ../tvmaxe.glade.h:67
+msgid "minutes"
+msgstr "minuta"
+
+#: ../tvmaxe.glade.h:68
+msgid "Also shut down my computer"
+msgstr "Isto tako isključi i moje računalo"
+
+#: ../tvmaxe.glade.h:69
+msgid ""
+"<b>A shutdown timer is in progress. <a href=\"cancel\">Click here to cancel</"
+"a></b>"
+msgstr ""
+"<b>Zakazano vrijeme isključivanja je pokrenuto. <a href=\"cancel\">Kliknite "
+"ovdje za prestanak isključivanja</a></b>"
+
+#: ../tvmaxe.glade.h:70 .././tv-maxe.desktop:9
+msgid "TV-MAXE"
+msgstr "TV-MAXE"
+
+#: ../tvmaxe.glade.h:71
+msgid "_TV-maxe"
+msgstr "_TV-maxe"
+
+#: ../tvmaxe.glade.h:72
+msgid "List"
+msgstr "Popis"
+
+#: ../tvmaxe.glade.h:73 ../tvmaxe.py:2050
+msgid "Add a TV channel"
+msgstr "Dodaj ТV program"
+
+#: ../tvmaxe.glade.h:74
+msgid "Refresh channel list"
+msgstr "Osvježi popis programa"
+
+#: ../tvmaxe.glade.h:75
+msgid "Save current channellist"
+msgstr "Spremi trenutni popis programa"
+
+#: ../tvmaxe.glade.h:76
+msgid "Deleted channels..."
+msgstr "Obrisani programi..."
+
+#: ../tvmaxe.glade.h:77
+msgid "Connect with PBX"
+msgstr "Poveži se s PBX-om"
+
+#: ../tvmaxe.glade.h:78
+msgid "Schedule manager..."
+msgstr "Upravitelj snimanjem..."
+
+#: ../tvmaxe.glade.h:79
+msgid "Automatically shut down TV-Maxe after a user-defined time"
+msgstr "Automatski isključi TV-Maxe nakon određenog vremena"
+
+#: ../tvmaxe.glade.h:80
+msgid "Sleep..."
+msgstr "Samoisključivanje..."
+
+#: ../tvmaxe.glade.h:81
+msgid "_View"
+msgstr "_Pogled"
+
+#: ../tvmaxe.glade.h:82
+msgid "Channel list"
+msgstr "Popis programa"
+
+#: ../tvmaxe.glade.h:83
+msgid "Radio mode"
+msgstr "Radio sučelje"
+
+#: ../tvmaxe.glade.h:84
+msgid "_Help"
+msgstr "_Pomoć"
+
+#: ../tvmaxe.glade.h:85
+msgid "Channel list:"
+msgstr "Popis programa:"
+
+#: ../tvmaxe.glade.h:86
+msgid "TV Channels"
+msgstr "TV programi"
+
+#: ../tvmaxe.glade.h:87
+msgid "Radio Channels"
+msgstr "RADIO programi"
+
+#: ../tvmaxe.glade.h:88
+msgid ""
+"TV-MAXE is free software, but its development is not easy. If you like this "
+"application and if you want to show your support, please make a donation "
+"using the button below.\n"
+"Thank you"
+msgstr ""
+"TV-MAXE je slobodan softver, ali njegov razvoj nije lak. Ako vam se sviđa "
+"ova aplikacija i ako nas želite podržati, Molimo vas da donirate koristeći "
+"tipku ispod.\n"
+"Hvala vam!"
+
+#: ../tvmaxe.glade.h:90
+msgid "label"
+msgstr "oznaka"
+
+#: ../tvmaxe.glade.h:91 ../tvmaxe.py:1884 ../tvmaxe.py:1941
+msgid "Press OK or middle-click to play this channel"
+msgstr "Pritisnite OK ili srednji klik za reprodukciju ovog programa"
+
+#: ../tvmaxe.glade.h:93 ../tvmaxe.py:1976
+#, no-c-format, python-format
+msgid "%s left..."
+msgstr "%s preostalo..."
+
+#: ../tvmaxe.glade.h:94
+msgid "Sleep active"
+msgstr "Isključivanje aktivno"
+
+#: ../tvmaxe.glade.h:95
+msgid "0 min"
+msgstr "0 min"
+
+#: ../tvmaxe.glade.h:96
+msgid "Recording..."
+msgstr "Snimanje..."
+
+#: ../tvmaxe.glade.h:97
+msgid "00:00:00"
+msgstr "00:00:00"
+
+#: ../tvmaxe.glade.h:98
+msgid "Add"
+msgstr "Dodaj"
+
+#: ../tvmaxe.glade.h:99
+msgid "Add subscription"
+msgstr "Dodaj pretplatu"
+
+#: ../tvmaxe.glade.h:100
+msgid "Address:"
+msgstr "Adresa:"
+
+#: ../tvmaxe.glade.h:101
+msgid "..."
+msgstr "..."
+
+#: ../tvmaxe.glade.h:102
+msgid "Edit"
+msgstr "Uredi"
+
+#: ../tvmaxe.glade.h:103
+msgid "Edit subscription"
+msgstr "Uredi pretplatu"
+
+#: ../tvmaxe.glade.h:104
+msgid "From:"
+msgstr "Popis kanala:"
+
+#: ../tvmaxe.glade.h:105
+msgid "Protocol:"
+msgstr "Protokol:"
+
+#: ../tvmaxe.glade.h:106
+msgid "Availability:"
+msgstr "Dostupnost:"
+
+#: ../tvmaxe.glade.h:107
+msgid "TV-Guide"
+msgstr "EPG - TV programski vodič"
+
+#: ../tvmaxe.glade.h:108 ../tvmaxe.py:2722
+msgid "Report as broken"
+msgstr "Prijavi kao neispravno"
+
+#: ../tvmaxe.glade.h:109
+msgid "TV-MAXE: Radio"
+msgstr "TV-MAXE: Radio"
+
+#: ../tvmaxe.glade.h:110
+msgid "Change to TV Mode"
+msgstr "Vrati ТV sučelje"
+
+#: ../tvmaxe.glade.h:111
+msgid "Channels"
+msgstr "Programi"
+
+#: ../tvmaxe.glade.h:112
+msgid "Help"
+msgstr "Pomoć"
+
+#: ../tvmaxe.glade.h:113
+msgid "Black list manager"
+msgstr "Upravitelj popisa obrisanih"
+
+#: ../tvmaxe.glade.h:114
+msgid ""
+"There are the channels you removed from TV-MAXE.\n"
+"You can un-delete them one by one or you can\n"
+"remove them all from blacklist"
+msgstr ""
+"Postoje programi koje ste uklonili iz TV-MAXA.\n"
+"Možete ih vratiti jednog po jednog ili ih možete\n"
+"ukloniti s popisa obrisanih"
+
+#: ../tvmaxe.glade.h:117
+msgid "Preferences"
+msgstr "Osobitosti"
+
+#: ../tvmaxe.glade.h:118
+msgid "<b>TV-Maxe screen theme:</b>"
+msgstr "<b>TV-Maxe tema:</b>"
+
+#: ../tvmaxe.glade.h:119
+msgid "<b>Show an icon in system tray</b>"
+msgstr "<b>Prikaži ikonu u traci sustava</b>"
+
+#: ../tvmaxe.glade.h:120
+msgid "<b>Player settings:</b>"
+msgstr "<b>Postavke reproduktora:</b>"
+
+#: ../tvmaxe.glade.h:121
+msgid "<b>Use internal player:</b>"
+msgstr "<b>Koristi unutarnji reproduktor:</b>"
+
+#: ../tvmaxe.glade.h:122
+msgid "Player backend:"
+msgstr "Unutarnji reproduktor:"
+
+#: ../tvmaxe.glade.h:123
+msgid "<b>Use an external application:</b>"
+msgstr "<b>Koristi vanjsku aplikaciju:</b>"
+
+#: ../tvmaxe.glade.h:124
+msgid "Player init command:"
+msgstr "Naredba pokretanja reproduktora:"
+
+#: ../tvmaxe.glade.h:125
+msgid "<b>Recording settings:</b>"
+msgstr "<b>Postavke snimanja:</b>"
+
+#: ../tvmaxe.glade.h:126
+msgid "Recording quality:"
+msgstr "Kvaliteta snimanja:"
+
+#: ../tvmaxe.glade.h:127
+msgid "General Settings"
+msgstr "Općenite postavke"
+
+#: ../tvmaxe.glade.h:128
+msgid "<b>Shutdown command:</b>"
+msgstr "<b>Naredba isključivanja:</b>"
+
+#: ../tvmaxe.glade.h:129
+msgid "<b>Static ports:</b>"
+msgstr "<b>Nepromjenjivi ulaz:</b>"
+
+#: ../tvmaxe.glade.h:130
+msgid "Incoming port:"
+msgstr "Dolazni ulaz:"
+
+#: ../tvmaxe.glade.h:131
+msgid "Outgoing port:"
+msgstr "Odlazni ulaz:"
+
+#: ../tvmaxe.glade.h:132
+msgid "<b>Enable HTTP remote controller</b>"
+msgstr "<b>Omogući HTTP daljinsko upravljanje</b>"
+
+#: ../tvmaxe.glade.h:133
+msgid "Listen to this port for connections: "
+msgstr "Nadziri ovaj ulaz za veze: "
+
+#: ../tvmaxe.glade.h:134
+msgid "<b>Enable infrared remote controller</b>"
+msgstr "<b>Omogući IR daljinski upravljač</b>"
+
+#: ../tvmaxe.glade.h:135
+msgid "Remote controller function"
+msgstr "Funkcije daljinskog upravljača"
+
+#: ../tvmaxe.glade.h:136
+msgid "Action button"
+msgstr "Radnje tipki"
+
+#: ../tvmaxe.glade.h:137
+msgid "<b>Play/Pause</b>"
+msgstr "<b>Reprodukcija/Pauza</b>"
+
+#: ../tvmaxe.glade.h:138
+msgid "<b>Stop</b>"
+msgstr "<b>Zaustavi</b>"
+
+#: ../tvmaxe.glade.h:139
+msgid "<b>Full screen</b>"
+msgstr "<b>Cijeli zaslon</b>"
+
+#: ../tvmaxe.glade.h:140
+msgid "<b>Mute</b>"
+msgstr "<b>Utišaj</b>"
+
+#: ../tvmaxe.glade.h:141
+msgid "<b>Volume +</b>"
+msgstr "<b>Glasnoća zvuka +</b>"
+
+#: ../tvmaxe.glade.h:142
+msgid "<b>Volume -</b>"
+msgstr "<b>Glasnoća zvuka -</b>"
+
+#: ../tvmaxe.glade.h:143
+msgid "<b>Channel +</b>"
+msgstr "<b>Program +</b>"
+
+#: ../tvmaxe.glade.h:144
+msgid "<b>Channel -</b>"
+msgstr "<b>Program -</b>"
+
+#: ../tvmaxe.glade.h:145
+msgid "<b>Quit</b>"
+msgstr "<b>Zatvori</b>"
+
+#: ../tvmaxe.glade.h:146
+msgid "<b>Info</b>"
+msgstr "<b>Informacije</b>"
+
+#: ../tvmaxe.glade.h:147
+msgid "<b>Up</b>"
+msgstr "<b>Gore</b>"
+
+#: ../tvmaxe.glade.h:148
+msgid "<b>Down</b>"
+msgstr "<b>Dolje</b>"
+
+#: ../tvmaxe.glade.h:149
+msgid "<b>OK</b>"
+msgstr "<b>OK</b>"
+
+#: ../tvmaxe.glade.h:150
+msgid "<b>Sleep</b>"
+msgstr "<b>Isključivanje</b>"
+
+#: ../tvmaxe.glade.h:151
+msgid "<b>Advanced recording settings:</b>"
+msgstr "<b>Napredne postavke snimanja:</b>"
+
+#: ../tvmaxe.glade.h:152
+msgid "Audio codec:"
+msgstr "Zvučni kôdek:"
+
+#: ../tvmaxe.glade.h:153
+msgid "Video codec:"
+msgstr "Video kôdek:"
+
+#: ../tvmaxe.glade.h:154
+msgid "File format:"
+msgstr "Format datoteke:"
+
+#: ../tvmaxe.glade.h:155
+msgid "Advanced settings"
+msgstr "Napredne postavke"
+
+#: ../tvmaxe.glade.h:156
+msgid "Enabled"
+msgstr "Omogućeno"
+
+#: ../tvmaxe.glade.h:157
+msgid "URL"
+msgstr "URL"
+
+#: ../tvmaxe.glade.h:158
+msgid "More subscriptions lists"
+msgstr "Kliknite ovdje za više popisa pretplate!"
+
+#: ../tvmaxe.glade.h:159
+msgid "Subscriptions"
+msgstr "Pretplate"
+
+#: ../tvmaxe.glade.h:160
+msgid ""
+"\"Project Petrodava\" allows you to bypass blocked ports\n"
+"by redirecting the video and audio streams throught\n"
+"port {0}. Also it helps in scenarios which involves SopCast\n"
+"and slow connections.\n"
+"\n"
+"Please use this service only when needed as our resources\n"
+"are limited. Thanks!"
+msgstr ""
+"\"Projekt Petrodava\" omogućuje vam zaobilaženje blokiranih\n"
+"ulaza preusmjeravanjem video i zvučnih zapisa kroz\n"
+"ulaz {0}. Isto tako pomaže u slučaju koji uključuje SopCast\n"
+"i usporava vezu.\n"
+"\n"
+"Koristite ovu uslugu samo kada je potreba jer su naši resursi\n"
+"ograničeni. Hvala vam!"
+
+#: ../tvmaxe.glade.h:167
+msgid "Enable Petrodava"
+msgstr "Omogući Petrodava"
+
+#: ../tvmaxe.glade.h:168
+msgid "Server address:"
+msgstr "Adresa poslužitelja:"
+
+#: ../tvmaxe.glade.h:169
+msgid "Server port:"
+msgstr "Ulaz poslužitelja:"
+
+#: ../tvmaxe.glade.h:170
+msgid "Username:"
+msgstr "Korisničko ime:"
+
+#: ../tvmaxe.glade.h:171
+msgid "Password:"
+msgstr "Lozinka:"
+
+#: ../tvmaxe.glade.h:172
+msgid "Petrodava"
+msgstr "Petrodava"
+
+#: ../tvmaxe.glade.h:173
+msgid "Waiting remote controller..."
+msgstr "Čekanje daljinskog upravljača..."
+
+#: ../tvmaxe.glade.h:174
+msgid ""
+"<b>Press a button to assign this function to it.</b> \n"
+"TV-MAXE will detect the pressed button and it will automatically asign to "
+"this function.\n"
+"If you don't want to set a key, press <b>Cancel</b>."
+msgstr ""
+"<b>Pritisnite tipku za dodavanje funkcije.</b> \n"
+"TV-MAXE će detektirati pritisnutu tipku i automatski će dodati tu funkciju.\n"
+"Ako ne želite podesiti tipku, pritisnite <b>Otkaži</b>."
+
+#: ../tvmaxe.glade.h:177
+msgid "Received:"
+msgstr "Primljeno:"
+
+#: ../tvmaxe.glade.h:178
+msgid "0000000000000000"
+msgstr "0000000000000000"
+
+#: ../tvmaxe.glade.h:179
+msgid "<span size=\"xx-large\"><b>TV Guide</b></span>"
+msgstr "<span size=\"xx-large\"><b>EPG - TV programski vodič</b></span>"
+
+#: ../tvmaxe.glade.h:180
+msgid "TV Channel:"
+msgstr "TV program:"
+
+#: ../tvmaxe.glade.h:181
+msgid "Day:"
+msgstr "Dan:"
+
+#: ../tvmaxe.glade.h:182
+msgid ""
+"SopCast module has stopped running. This mean that the stream is no longer "
+"available or that 'sp-sc-auth' process cannot be executed."
+msgstr ""
+"Sopcast modul je prestao s radom. To znači da stream više nije dostupan ili "
+"da se 'sp-sc-auth' proces ne može pokrenuti."
+
+#: ../tvmaxe.glade.h:183
+msgid "Closing in 5 seconds..."
+msgstr "Zatvaranje za 5 sekundi..."
+
+#: ../tvmaxe.glade.h:184
+msgid "Show name"
+msgstr "Prikaži naziv"
+
+#: ../tvmaxe.glade.h:185
+msgid "Add new stream"
+msgstr "Dodaj novi stream"
+
+#: ../tvmaxe.glade.h:186
+msgid "Add new channel"
+msgstr "Dodaj novi program"
+
+#: ../tvmaxe.glade.h:187
+msgid ""
+"You can add TV or radio streams by giving the name and the stream address. "
+"Please note that TV-MAXE only supports sop://, http://, mms:// and rmtp://."
+msgstr ""
+"Možete dodati ТV ili RADIO streamove, upisivanjem naziva i adrese streama. "
+"Imajte na umu  da TV-MAXE samo podržava sop://, http://, mms:// , rmtp:// i  "
+"rtmp:// "
+
+#: ../tvmaxe.glade.h:188
+msgid "Channel name: "
+msgstr "Naziv programa:"
+
+#: ../tvmaxe.glade.h:189
+msgid "URL: "
+msgstr "URL: "
+
+#: ../tvmaxe.glade.h:190
+msgid "Icon:"
+msgstr "Ikona:"
+
+#: ../tvmaxe.glade.h:191
+msgid "Select..."
+msgstr "Odaberi..."
+
+#: ../tvmaxe.glade.h:192
+msgid "Parameters (optional): "
+msgstr "Parametri (neobavezno): "
+
+#: ../tvmaxe.glade.h:193
+msgid "Aspect ratio:"
+msgstr "Omjer slike:"
+
+#: ../tvmaxe.glade.h:194
+msgid "Save for this channel only"
+msgstr "Spremi samo za ovaj program"
+
+#: ../tvmaxe.glade.h:195
+msgid "Save for all channels"
+msgstr "Spremi za sve programe"
+
+#: ../tvmaxe.glade.h:196
+msgid ""
+"You can log in on your PBX account\n"
+"and watch the channels offered by this service directly from TV-MAXE."
+msgstr ""
+"Možete se prijaviti na vaš PBX račun i gledati pretplatničke\n"
+"programe izravno na TV-MAXU (rumunjski programi)."
+
+#: ../tvmaxe.glade.h:198
+msgid "<a href=\"http://pbxtv.ro/\">Don't have an account? Click here</a>"
+msgstr ""
+"<a href=\"http://pbxtv.ro/\">Još nemate korisnički račun? Kliknite ovdje!</a>"
+
+#: ../tvmaxe.glade.h:199
+msgid "Connect automatically when TV-MAXE starts."
+msgstr "Poveži se automatski prilikom pokretanja TV-MAXA."
+
+#: ../tvmaxe.glade.h:200
+msgid ""
+"<span size=\"small\"><i>To view all PBX channels, <a href=\"http://www."
+"pbxtelecom.ro/\">buy a subscription</a></i></span>"
+msgstr ""
+"<span size=\"small\"><i>Za gledanje svih PBX pograma (rumunjski programi), "
+"<a href=\"http://www.pbxtelecom.ro/\">kupite pretplatu</a></i></span>"
+
+#: ../tvmaxe.glade.h:201
+msgid "Connecting..."
+msgstr "Povezivanje..."
+
+#: ../tvmaxe.py:206 ../tvmaxe.py:1601
+msgid "Ready"
+msgstr "Za gledanje ili slušanje odaberite program s popisa"
+
+#: ../tvmaxe.py:279 ../tvmaxe.py:515 ../tvmaxe.py:2369
+#, python-format
+msgid "Total: %s channels in %s subscriptions"
+msgstr "Ukupno: %s programa %s pretplata"
+
+#: ../tvmaxe.py:885 ../tvmaxe.py:1011
+#, python-format
+msgid "Loading: %s"
+msgstr "Učitavanje: %s"
+
+#: ../tvmaxe.py:888 ../tvmaxe.py:927 ../tvmaxe.py:1014
+msgid "Loading "
+msgstr "Učitavanje"
+
+#: ../tvmaxe.py:921
+msgid "(Retrying) Loading "
+msgstr "Učitavanje (ponovni pokušaj) "
+
+#: ../tvmaxe.py:923
+msgid "(Retrying) Loading: "
+msgstr "Učitavanje (ponovni pokušaj): "
+
+#: ../tvmaxe.py:1051 ../tvmaxe.py:1098
+#, python-format
+msgid "Recording: %s"
+msgstr "Snimanje: %s"
+
+#: ../tvmaxe.py:1055 ../tvmaxe.py:1102
+msgid "(Retrying) Recording "
+msgstr "Snimanje (ponovni pokušaj) "
+
+#: ../tvmaxe.py:1057 ../tvmaxe.py:1104
+msgid "(Retrying) Recording: "
+msgstr "Snimanje (ponovni pokušaj): "
+
+#: ../tvmaxe.py:1061 ../tvmaxe.py:1108
+msgid "Recording "
+msgstr "Snimanje "
+
+#: ../tvmaxe.py:1175 ../tvmaxe.py:1177
+msgid "Playing: "
+msgstr "Reprodukcija: "
+
+#: ../tvmaxe.py:1178 ../tvmaxe.py:1599
+msgid "Playing "
+msgstr "Gledate program: "
+
+#: ../tvmaxe.py:1247
+msgid "Stopped"
+msgstr "Zaustavljeno"
+
+#: ../tvmaxe.py:1533
+#, python-format
+msgid "Languages: %s"
+msgstr "Jezici: %s"
+
+#: ../tvmaxe.py:1605 ../tvmaxe.py:1612
+msgid "Loading... "
+msgstr "Učitavanje..."
+
+#: ../tvmaxe.py:1666
+msgid "NO SIGNAL"
+msgstr "NEMA SIGNALA"
+
+#: ../tvmaxe.py:1669
+msgid "This channel seems to be unavailable."
+msgstr "Izgleda kako je ovaj program nedostupan."
+
+#: ../tvmaxe.py:1670
+msgid "Please try with another available source (if any)"
+msgstr "Probajte s drugim dostupnim izvorom (ako je dostupan)"
+
+#: ../tvmaxe.py:1671
+msgid "or try again later."
+msgstr "ili pokušajte kasnije."
+
+#: ../tvmaxe.py:1675
+msgid "Reported error: "
+msgstr "Prijavljena greška: "
+
+#: ../tvmaxe.py:2053
+msgid "Add a Radio channel"
+msgstr "Dodaj radio program"
+
+#: ../tvmaxe.py:2224 ../tvmaxe.py:2287
+msgid "This channel already exists"
+msgstr "Ovaj program već postoji"
+
+#: ../tvmaxe.py:2225 ../tvmaxe.py:2237 ../tvmaxe.py:2263 ../tvmaxe.py:2288
+#: ../tvmaxe.py:2301 ../tvmaxe.py:2326 ../tvmaxe.py:2436
+msgid "Error"
+msgstr "Greška"
+
+#: ../tvmaxe.py:2236 ../tvmaxe.py:2300
+msgid "Name and URL required!"
+msgstr "Potreban je naziv i URL!"
+
+#: ../tvmaxe.py:2262 ../tvmaxe.py:2325
+msgid "Channel cannot be added. Are you sure that the URL is correct?"
+msgstr "Program se ne može dodati. Je li ovaj URL ispravan?"
+
+#: ../tvmaxe.py:2437
+msgid "Cannot fetch the channel list. Aborting..."
+msgstr "Nemoguće je preuzimanje popisa programa. Prekidam..."
+
+#: ../tvmaxe.py:2794
+msgid "appears to be broken"
+msgstr "čini se da je neispravno"
+
+#: ../tvmaxe.py:2801
+msgid "Reported"
+msgstr "Prijavljeno"
+
+#: ../tvmaxe.py:2817
+msgid "Select image file..."
+msgstr "Odaberi datoteku slike..."
+
+#: ../tvmaxe.py:2826
+msgid "Images"
+msgstr "Slike"
+
+#: ../tvmaxe.py:2935
+msgid "Select subscription file..."
+msgstr "Odaberi datoteku pretplate..."
+
+#: ../tvmaxe.py:2954
+msgid "Save current channellist..."
+msgstr "Spremi trenutni popis programa..."
+
+#: ../tvmaxe.py:3023
+msgid "Channellist was successfully saved."
+msgstr "Popis programa je uspješno spremljen."
+
+#: ../tvmaxe.py:3032
+msgid "Sunday"
+msgstr "Nedjelja"
+
+#: ../tvmaxe.py:3033
+msgid "Monday"
+msgstr "Ponedjeljak"
+
+#: ../tvmaxe.py:3034
+msgid "Tuesday"
+msgstr "Utorak"
+
+#: ../tvmaxe.py:3035
+msgid "Wednesday"
+msgstr "Srijeda"
+
+#: ../tvmaxe.py:3036
+msgid "Thursday"
+msgstr "Četvrtak"
+
+#: ../tvmaxe.py:3037
+msgid "Friday"
+msgstr "Petak"
+
+#: ../tvmaxe.py:3038
+msgid "Saturday"
+msgstr "Subota"
+
+#: .././tv-maxe.desktop:10
+msgid "TV for Linux sistem"
+msgstr "TV za Linux operativne sustave"
+
+#: .././tv-maxe.desktop:12
+msgid "Televiziune gratis pentru sistemul tău Linux."
+msgstr "Gledajte besplatno TV na vašem Linuxu sustavu."
+
+#: .././tv-maxe.desktop:17
+msgid "TV;Television;Programs;channels;HD;HD channels;"
+msgstr "TV;Televizija;Programi;programi;HD;HD programi;"
+
+#~ msgid "Diagnostics started at "
+#~ msgstr "Dijagnostika pokrenuta u "
+
+#~ msgid "Diagnostics finished."
+#~ msgstr "Dijagnostika završena."
+
+#~ msgid "Tests finished."
+#~ msgstr "Test završen."
+
+#~ msgid "Internet connection OK"
+#~ msgstr "Internet povezivanje je u redu."
+
+#~ msgid ""
+#~ "tv-maxe.org was successfully contacted. Loading channelists and TV guides "
+#~ "should work properly."
+#~ msgstr ""
+#~ "tv-maxe.org je uspješno kontaktiran. Učitavanje popisa programa i EPG - "
+#~ "TV programskog vodiča bi trebalo ispravno raditi."
+
+#~ msgid "Unexpected data"
+#~ msgstr "Neočekivani podaci"
+
+#~ msgid ""
+#~ "tv-maxe.org could be contacted, but the received data is invalid. "
+#~ "Internet connection may not work properly."
+#~ msgstr ""
+#~ "tv-maxe.org se može kontaktirati, ali primljeni podaci su neispravni. "
+#~ "Pristup internet možda nije ispravan."
+
+#~ msgid "Cannot connect to host"
+#~ msgstr "Nemoguće povezivanje s poslužiteljem"
+
+#~ msgid "Couldn't reach tv-maxe.org. Please check your internet connection."
+#~ msgstr "Nemoguć pristup tv-maxe.org. Provjerite vaš pristup internetu."
+
+#~ msgid "Port 3912 error"
+#~ msgstr "Greška ulaza 3912"
+
+#~ msgid "Port 3912 cannot be reached. SopCast streams may be unavailable."
+#~ msgstr ""
+#~ "Ulazu 3912 se ne može pristupiti. SopCast streamovi su možda nedostupni."
+
+#~ msgid "Port 1935 error"
+#~ msgstr "Greška ulaza 1935"
+
+#~ msgid "Port 3915 cannot be reached. RTMP streams may be unavailable."
+#~ msgstr ""
+#~ "Ulazu 3912 se ne može pristupiti. RTMP streamovi su možda nedostupni."
+
+#~ msgid "Port 554 error"
+#~ msgstr "Greška ulaza 554"
+
+#~ msgid "Port 554 cannot be reached. RTSP streams may be unavailable."
+#~ msgstr ""
+#~ "Ulazu 3912 se ne može pristupiti. RTSP streamovi su možda nedostupni."
+
+#~ msgid "Some ports are unavailable"
+#~ msgstr "Neki ulazi su nedostupni"
+
+#~ msgid ""
+#~ "The following ports were found with problems. Please make sure that "
+#~ "there's no other applications using this ports:\n"
+#~ "\n"
+#~ "{0}\n"
+#~ "\n"
+#~ "Tip: you could use Petrodava to bypass port restrictions."
+#~ msgstr ""
+#~ "Sljedeći ulazi imaju probleme. Pobrinite se da druge aplikacije ne "
+#~ "koriste ove ulaze:\n"
+#~ "\n"
+#~ "{0}\n"
+#~ "\n"
+#~ "Savjet: možete koristit Petrodava za zaobilaženje ograničenja."
+
+#~ msgid "All required ports seems to be ok"
+#~ msgstr "Izgleda da su svi ulazi u redu."
+
+#~ msgid ""
+#~ "Seems that all the required ports are free and also you don't have any "
+#~ "restrictions for ports from outside."
+#~ msgstr ""
+#~ "Izgleda da su svi potrebni ulazi slobodni i stoga nemate nikakvih "
+#~ "vanjskih ograničenja za ulaze."
+
+#~ msgid "SopCast is available"
+#~ msgstr "SopCast je dostupan"
+
+#~ msgid "SopCast binary was found and seems to work fine."
+#~ msgstr "SopCast izvršna datoteka je pronađena i čini se da je u redu."
+
+#~ msgid "SopCast failed to run"
+#~ msgstr "SopCast je nemoguće pokrenuti"
+
+#~ msgid ""
+#~ "SopCast binary was found but failed to run. Please run {0} from Terminal "
+#~ "for more details."
+#~ msgstr ""
+#~ "SopCast izvršna datoteka je pronađena ali se ne može pokrenuti. Pokrenite "
+#~ "{0} iz Terminala za više pojedinosti."
+
+#~ msgid "SopCast doesn't seems to be installed"
+#~ msgstr "Izgleda da SopCast nije instaliran"
+
+#~ msgid "SopCast binary not found. sop:// streams will not be available."
+#~ msgstr ""
+#~ "SopCast izvršna datoteka nije pronađena. sop:// streamovi neće biti "
+#~ "dostupni."
+
+#~ msgid ""
+#~ "FlashPlayer 10 Handshake patch not found in RTMPDump. Some streams may "
+#~ "not work properly."
+#~ msgstr ""
+#~ "FlashPlayer 10 Handshake zakrpa nije pronađena u RTMPDumpu. Neki "
+#~ "streamovi možda neće raditi ispravno."
+
+#~ msgid "RTMPDump is available"
+#~ msgstr "RTMPDump je dostupan"
+
+#~ msgid "RTMPDump is installed and it's working properly"
+#~ msgstr "RTMPDump je instaliran i radi ispravno"
+
+#~ msgid "RTMPDump failed to run"
+#~ msgstr "Neuspjelo pokretanje RTMPDumpa"
+
+#~ msgid ""
+#~ "rtmpdump was found, but failed to run. Please run rtmpdump from terminal "
+#~ "for more details."
+#~ msgstr ""
+#~ "rtmpdump je pronađen, ali se ne može pokrenuti. Pokrenite rtmpdump iz "
+#~ "terminala za više pojedinosti."
+
+#~ msgid "RTMPDump doesn't seems to be installed."
+#~ msgstr "Izgleda da RTMPDump nije instaliran."
+
+#~ msgid "rtmpdump not found. RTMP streams will be unavailable."
+#~ msgstr "rtmpdump nije pronađen. RTMP streamovi će biti nedostupni."
+
+#~ msgid "PyGST is available"
+#~ msgstr "PyGST je dostupan"
+
+#~ msgid "PyGST was found and GStreamer should be available in TV-Maxe."
+#~ msgstr "PyGST je pronađen i GStreamer bi trebao biti dostupan u TV-Maxu."
+
+#~ msgid "PyGST cannot be imported"
+#~ msgstr "PyGST se ne može uvesti"
+
+#~ msgid ""
+#~ "Seems that GStreamer is either not installed or the corresponding Python "
+#~ "bindings are not available. Please install proper packages from your "
+#~ "distribution repositories if you want GStreamer support in TV-Maxe."
+#~ msgstr ""
+#~ "Čini se da GStreamer ili nije instaliran ili odgovarajući Python paketi "
+#~ "nisu dostupni. Instalirajte odgovarajući paket s repozitorija vaše "
+#~ "distiribucije ako želite da je GStreamer podržan u TV-Maxu."
+
+#~ msgid "Old libVLC"
+#~ msgstr "Zastarjeli libVLC"
+
+#~ msgid ""
+#~ "Your VLC installation is old. At least version 1.1.0 is required for TV-"
+#~ "Maxe to work with VLC backend."
+#~ msgstr ""
+#~ "Vaša VLC instalacija je zastarjela. At least version 1.1.0 is required "
+#~ "for TV-Maxe to work with VLC backend."
+
+#~ msgid "VLC is available"
+#~ msgstr "VLC je dostupan"
+
+#~ msgid "VLC was found in your system and seems to be fully functional."
+#~ msgstr ""
+#~ "VLC je pronađen na vašem sustavu i čini se da je u potpunosti "
+#~ "funkcionalan."
+
+#~ msgid "Couldn't determine VLC version"
+#~ msgstr "Nemoguće određivanje VLC inačice"
+
+#~ msgid ""
+#~ "VLC was found, but its version couldn't be determined. VLC backend may "
+#~ "not work."
+#~ msgstr ""
+#~ "VLC je pronađen, ali se njegova inačica ne može odrediti. VLC pozadinki "
+#~ "program možda neće raditi"
+
+#~ msgid "VLC was not found"
+#~ msgstr "VLC nije pronađen"
+
+#~ msgid ""
+#~ "libVLC was not found; playing streams using VLC-tvmx backend will not be "
+#~ "available."
+#~ msgstr ""
+#~ "libVLC nije pronađen; reprodukcija streamova pomoću VLC-tvmx pozadinskog "
+#~ "programa neće biti dostupna."
+
+#~ msgid "MPlayer is available"
+#~ msgstr "MPlayer je dostupan"
+
+#~ msgid "MPlayer was found and should be available as TV-Maxe backend."
+#~ msgstr ""
+#~ "MPlayer je pronađen i trebao bi biti dostupan kao TV-Maxe pozadinski "
+#~ "program."
+
+#~ msgid "MPlayer error"
+#~ msgstr "MPlayer greška"
+
+#~ msgid ""
+#~ "MPlayer was found but doesn't seems to be working. Please run mplayer "
+#~ "from Terminal for more details."
+#~ msgstr ""
+#~ "MPlayer je pronađen ali se čini da ne radi. Pokrenite mplayer s Terminala "
+#~ "za više pojedinosti."
+
+#~ msgid "MPLayer not found"
+#~ msgstr "MPLayer nije pronađen"
+
+#~ msgid ""
+#~ "MPlayer was not found; playing streams using MPlayer as backend will not "
+#~ "be available."
+#~ msgstr ""
+#~ "MPlayer nije pronađen; reprodukcija streamova pomoću MPlayera kao "
+#~ "pozadinskog programa neće biti dostupna."
+
+#~ msgid "No backend available"
+#~ msgstr "Nema dostupnog pozadinskog programa"
+
+#~ msgid "No backend found. Playing streams will not work."
+#~ msgstr ""
+#~ "Nema dostupnog pozadinskog programa. Reprodukcija streamova neće raditi"
+
+#~ msgid "Desktop environment detected as {0}"
+#~ msgstr "{0} radno okruženje je otkriveno"
+
+#~ msgid "Desktop environment couldn't be detected."
+#~ msgstr "Radno okruženje ne može biti otkriveno."
+
+#~ msgid "Auto power off feature may not work."
+#~ msgstr "Značajka samoisključivanja možda ne radi."
+
+#~ msgid "LIRC was found"
+#~ msgstr "LIRC je pronađen"
+
+#~ msgid ""
+#~ "LIRC was found installed in your system. Please configure your IR remote "
+#~ "controller if you want to use it with TV-Maxe."
+#~ msgstr ""
+#~ "LIRC je instaliran na vašem sustavu. Podesite vaš IR daljinski upravljač "
+#~ "ako ga želite koristiti s TV-Maxom."
+
+#~ msgid "LIRC was not found"
+#~ msgstr "LIRC nije pronađen"
+
+#~ msgid ""
+#~ "IR remote support is disabled. Please install LIRC if you got an IR "
+#~ "remote controller and you want to use it with TV-Maxe."
+#~ msgstr ""
+#~ "Podrška za IR daljinski upravljač je onemogućena. Instalirajte LIRC ako "
+#~ "imate IR daljinski upravljač i želite ga koristiti s TV-Maxom."
+
+#~ msgid "FFMPEG not available"
+#~ msgstr "FFMPEG je nedostupan"
+
+#~ msgid ""
+#~ "FFMPEG doesn't seems to be installed. Please install it and make sure "
+#~ "that the binary is located in one of the $PATH directories."
+#~ msgstr ""
+#~ "FFMPEG nije instaliran. Instalirajte ga i pobrinite se da se izvršna "
+#~ "datoteka nalazi u jednoj od putanji $PATH direktorija."
+
+#~ msgid "Cannot connect to Petrodava"
+#~ msgstr "Nemoguće povezivanje s Petrodava"
+
+#~ msgid ""
+#~ "TV-Maxe couldn't connect to Petrodava. This could be because of your "
+#~ "network conenction or the Petrodava servers are down."
+#~ msgstr ""
+#~ "TV-Maxe ne može se povezati s Petrodava. Uzrok tome može biti vaš mrežni "
+#~ "pristup ili Petrodava poslužitelji su nedostupni."
+
+#~ msgid "Petrodava is working"
+#~ msgstr "Petrodava radi"
+
+#~ msgid ""
+#~ "Your connection with Petrodava server is working. To connect via "
+#~ "Petrodava please enable the option in TV-Maxe's settings dialog."
+#~ msgstr ""
+#~ "Vaše povezianje s Petrodava poslužiteljem radi. Za povezivanje putem "
+#~ "Petrodava odaberite mogućnost u TV-Maxe dijalogu postavka."
+
+#~ msgid "Petrodava is not working"
+#~ msgstr "Petrodava ne radi"
+
+#~ msgid "TV-Maxe connected to Petrodava, but received an invalid response."
+#~ msgstr "TV-Maxe je povezan s Petrodava, ali prima neispravan odgovor."
+
+#~ msgid "Very high"
+#~ msgstr "Vrlo visoka"
+
+#~ msgid "High"
+#~ msgstr "Visoka"
+
+#~ msgid "Normal"
+#~ msgstr "Normalna"
+
+#~ msgid "Low"
+#~ msgstr "Niska"
+
+#~ msgid "Very low"
+#~ msgstr "Vrlo niska"
+
+#~ msgid "Record"
+#~ msgstr "Snimi"
+
+#~ msgid "Closing in {0} seconds..."
+#~ msgstr "Zatvaranje {0} sekundi..."
+
+#~ msgid "Sorry, but this channel does not exists."
+#~ msgstr "Nažalost, ovaj program ne postoji."
+
+#~ msgid "Save recording..."
+#~ msgstr "Spremite snimanje..."
+
+#~ msgid "Free television for your Linux system."
+#~ msgstr "Gledajte besplatno TV na vašem Linuxu sustavu."
