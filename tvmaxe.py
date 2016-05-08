@@ -11,10 +11,6 @@ try:
         os.path.abspath(__file__)), 'lng')
 except:
     LOCALE_PATH = 'lng'
-try:
-    locale.setlocale(locale.LC_ALL, '')
-except:
-    locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 for module in gtk.glade, gettext:
     module.bindtextdomain(GETTEXT_DOMAIN, LOCALE_PATH)
     module.textdomain(GETTEXT_DOMAIN)
@@ -280,11 +276,11 @@ class TVMaxe:
               ('0', str(len(self.settingsManager.getSubscriptions())))))
         self.gui.get_object('aboutdialog1').set_version(VERSION)
         self.gui.get_object('recqScale').set_show_fill_level(False)
-        self.gui.get_object('recqScale').add_mark(1, gtk.POS_LEFT, 'Very high')
-        self.gui.get_object('recqScale').add_mark(8, gtk.POS_LEFT, 'High')
-        self.gui.get_object('recqScale').add_mark(16, gtk.POS_LEFT, 'Normal')
-        self.gui.get_object('recqScale').add_mark(24, gtk.POS_LEFT, 'Low')
-        self.gui.get_object('recqScale').add_mark(35, gtk.POS_LEFT, 'Very low')
+        self.gui.get_object('recqScale').add_mark(1, gtk.POS_LEFT, _('Very high'))
+        self.gui.get_object('recqScale').add_mark(8, gtk.POS_LEFT, _('High'))
+        self.gui.get_object('recqScale').add_mark(16, gtk.POS_LEFT, _('Normal'))
+        self.gui.get_object('recqScale').add_mark(24, gtk.POS_LEFT, _('Low'))
+        self.gui.get_object('recqScale').add_mark(35, gtk.POS_LEFT, _('Very low'))
 
         self.tvguide = ProgramTV()
         self.pbx = PBX()
@@ -512,8 +508,8 @@ class TVMaxe:
                     self.gui.get_object(
                         'tvguidestore').append([id, image, name])
         self.gui.get_object(
-            'liststatuslabel').set_text(_("Total: %s channels in %s subscriptions" %
-     (str(self.countChannels()), str(len(self.settingsManager.abonamente)))))
+            'liststatuslabel').set_text(_("Total: %s channels in %s subscriptions") %
+     (str(self.countChannels()), str(len(self.settingsManager.abonamente))))
         if idleadd:
             return False
         return iter
@@ -765,7 +761,7 @@ class TVMaxe:
                             self.gui.get_object('menuitem40').hide()
                             self.gui.get_object(
                                 'menuitem47').set_label(
-                                    'Record')
+                                    _('Record'))
                             self.gui.get_object('menuitem47').set_submenu(None)
                             if hasattr(self, 'handler_menuitem47'):
                                 self.gui.get_object(
@@ -833,7 +829,7 @@ class TVMaxe:
                                 del self.handler_menuitem47
                             self.gui.get_object(
                                 'menuitem47').set_label(
-                                    'Record stream')
+                                    _('Record stream'))
                             submenu = self.generateStreamsMenu(
                                 id, 'radio_rec', urls)
                             if hasattr(self, 'handler_menuitem47'):
@@ -847,7 +843,7 @@ class TVMaxe:
                             self.gui.get_object('menuitem40').hide()
                             self.gui.get_object(
                                 'menuitem47').set_label(
-                                    'Record')
+                                    _('Record'))
                             self.gui.get_object('menuitem47').set_submenu(None)
                             if hasattr(self, 'handler_menuitem47'):
                                 self.gui.get_object(
@@ -1048,7 +1044,7 @@ class TVMaxe:
         if self.url != '':
             if self.getTime_to:
                 gobject.source_remove(self.getTime_to)
-            self.logo = [1, _("Recording: %s" % self.currentChannel.name)]
+            self.logo = [1, _("Recording: %s") % self.currentChannel.name]
             if self.urlIndex > 0:
                 gobject.idle_add(
                     self.statusbar,
@@ -1683,7 +1679,7 @@ class TVMaxe:
         if self.countdown != 0:
             self.countdown = self.countdown - 1
             self.gui.get_object('label32').set_text(
-                'Closing in {0} seconds...'.format(self.countdown))
+                _('Closing in {0} seconds...').format(self.countdown))
             return True
         else:
             self.hideError()
@@ -1691,7 +1687,7 @@ class TVMaxe:
 
     def hideError(self, obj=None):
         self.gui.get_object('window5').hide()
-        self.gui.get_object('label32').set_text('Closing in 5 seconds...')
+        self.gui.get_object('label32').set_text(_('Closing in 5 seconds...'))
 
     def showGhidTV(self, obj, channel=None):
         try:
@@ -2366,7 +2362,7 @@ class TVMaxe:
         blackstore = self.gui.get_object('blackstore')
         blackstore.append([id, self.channels[id].name])
         self.gui.get_object('liststatuslabel').set_text(
-            _("Total: %s channels in %s subscriptions" % (str(self.countChannels()), str(len(self.settingsManager.abonamente))))
+            _("Total: %s channels in %s subscriptions") % (str(self.countChannels(), str(len(self.settingsManager.abonamente))))
         )
 
     def iterConvert(self, tup):
@@ -2433,7 +2429,7 @@ class TVMaxe:
                 self.gtkMessage,
                 gtk.MESSAGE_ERROR,
                 gtk.BUTTONS_CLOSE,
-                _('Error'),
+                (_('Error')),
                 _('Cannot fetch the channel list. Aborting...'))
             gobject.idle_add(self.gui.get_object('vbox26').set_sensitive, True)
             gobject.idle_add(self.gui.get_object('hbox27').hide)
@@ -3151,7 +3147,7 @@ class TVMaxe:
             if self.autoplay_channel in self.channels:
                 self.playChannel(self.channels[self.autoplay_channel])
             else:
-                gobject.idle_add(tools.msg_error, "Sorry, but this channel does not exists.")
+                gobject.idle_add(tools.msg_error, _("Sorry, but this channel does not exists."))
                 self.stop()
         elif self.autoplay_url:
             gobject.idle_add(self.playURL, self.autoplay_url)
@@ -3159,7 +3155,7 @@ class TVMaxe:
 
     def saveRecord(self, tip):
         dialog = gtk.FileChooserDialog(
-            "Save recording...",
+            _("Save recording..."),
             None,
             gtk.FILE_CHOOSER_ACTION_SAVE,
             (gtk.STOCK_CANCEL,

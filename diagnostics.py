@@ -26,7 +26,7 @@ class Diagnostics:
         self.gui.get_object('diag_waiting_txt').hide()
         self.gui.get_object('diagnostics_w').set_visible(True)
         self.gui.get_object('diagnostics_w').present()
-        self.gui.get_object('diag_desc').set_markup(
+        self.gui.get_object('diag_desc').set_markup_(
             """<b>Informations</b>\n\n""" +
             """Click on an item in the list to get informations about it."""
         )
@@ -47,7 +47,7 @@ class Diagnostics:
         self.gui.get_object('diag_waiting_txt').show()
         self.gui.get_object('diagnostics_store').clear()
 
-        self.add_success('Diagnostics started at ' + strftime("%H:%M:%S"), '')
+        self.add_success(_('Diagnostics started at ') + strftime("%H:%M:%S"), '')
         self.running = True
         self.test_number = -1
         threading.Thread(target=self.do_next_test).start()
@@ -63,7 +63,7 @@ class Diagnostics:
             except:
                 self.do_next_test()
         else:
-            print('Diagnostics finished.')
+            print(_('Diagnostics finished.'))
             gobject.idle_add(self.done_tests)
             return
 
@@ -114,26 +114,26 @@ class Diagnostics:
         self.gui.get_object('diag_waiting_txt').hide()
         self.running = False
 
-        self.add_success('Tests finished.', '')
+        self.add_success(_('Tests finished.'), '')
 
     """ ------------------------------ TESTS ----------------------------- """
     def test_tvmaxeorg(self):
         try:
             data = urllib2.urlopen('http://tv-maxe.org/hello.txt').read()
             if data == 'hi there!\n':
-                self.add_success('Internet connection OK',
-                                 "tv-maxe.org was successfully contacted. "
+                self.add_success(_('Internet connection OK'),
+                                 _("tv-maxe.org was successfully contacted. "
                                  "Loading channelists and TV guides should "
-                                 "work properly.")
+                                 "work properly."))
             else:
-                self.add_warning('Unexpected data',
-                                 "tv-maxe.org could be contacted, but the "
+                self.add_warning(_('Unexpected data'),
+                                 _("tv-maxe.org could be contacted, but the "
                                  "received data is invalid. Internet "
-                                 "connection may not work properly.")
+                                 "connection may not work properly."))
         except:
-            self.add_error('Cannot connect to host',
-                           "Couldn't reach tv-maxe.org. Please check your "
-                           "internet connection.")
+            self.add_error(_('Cannot connect to host'),
+                           _("Couldn't reach tv-maxe.org. Please check your "
+                           "internet connection."))
         self.do_next_test()
 
     def test_ports(self):
@@ -165,9 +165,9 @@ class Diagnostics:
             s.connect(('broker.sopcast.com', 3912))
             s.shutdown(2)
         except:
-            self.add_warning('Port 3912 error',
-                             "Port 3912 cannot be reached. SopCast streams "
-                             "may be unavailable.")
+            self.add_warning(_('Port 3912 error'),
+                             _("Port 3912 cannot be reached. SopCast streams "
+                             "may be unavailable."))
             fails.append('3912')
             error = True
 
@@ -178,9 +178,9 @@ class Diagnostics:
             s.connect(('s3b78u0kbtx79q.cloudfront.net', 1935))
             s.shutdown(2)
         except:
-            self.add_warning('Port 1935 error',
-                             "Port 3915 cannot be reached. RTMP streams may "
-                             "be unavailable.")
+            self.add_warning(_('Port 1935 error'),
+                             _("Port 3915 cannot be reached. RTMP streams may "
+                             "be unavailable."))
             fails.append('1935')
             error = True
 
@@ -191,24 +191,24 @@ class Diagnostics:
             s.connect(('stream.the.sk', 554))
             s.shutdown(2)
         except:
-            self.add_warning('Port 554 error',
-                             "Port 554 cannot be reached. RTSP streams may "
-                             "be unavailable.")
+            self.add_warning(_('Port 554 error'),
+                             _("Port 554 cannot be reached. RTSP streams may "
+                             "be unavailable."))
             fails.append('554')
             error = True
 
         if error:
-            self.add_warning('Some ports are unavailable',
-                             "The following ports were found with problems. "
+            self.add_warning(_('Some ports are unavailable'),
+                             _("The following ports were found with problems. "
                              "Please make sure that there's no other "
                              "applications using this ports:\n\n{0}\n\n"
                              "Tip: you could use Petrodava to bypass port "
-                             "restrictions.".format('\n'.join(fails)))
+                             "restrictions.").format('\n'.join(fails)))
         else:
-            self.add_success('All required ports seems to be ok',
-                             "Seems that all the required ports are free "
+            self.add_success(_('All required ports seems to be ok'),
+                             _("Seems that all the required ports are free "
                              "and also you don't have any restrictions for "
-                             "ports from outside.")
+                             "ports from outside."))
 
         self.do_next_test()
 
@@ -223,22 +223,22 @@ class Diagnostics:
                 )
                 p.wait()
                 if p.poll() == 11:
-                    self.add_success('SopCast is available',
-                                     "SopCast binary was found and seems to "
-                                     "work fine.")
+                    self.add_success(_('SopCast is available'),
+                                     _("SopCast binary was found and seems to "
+                                     "work fine."))
                 else:
-                    self.add_error('SopCast failed to run',
-                                   "SopCast binary was found but failed to "
+                    self.add_error(_('SopCast failed to run'),
+                                   _("SopCast binary was found but failed to "
                                    "run. Please run {0} from Terminal for "
-                                   "more details.".format(sp))
+                                   "more details.".format(sp)))
                 self.do_next_test()
                 return
             except:
                 pass
 
-        self.add_warning('SopCast doesn\'t seems to be installed',
-                         "SopCast binary not found. sop:// streams will not "
-                         "be available.")
+        self.add_warning(_('SopCast doesn\'t seems to be installed'),
+                         _("SopCast binary not found. sop:// streams will not "
+                         "be available."))
         self.do_next_test()
 
     def test_rtmpdump(self):
@@ -252,23 +252,23 @@ class Diagnostics:
             if p.poll() == 1:
                 out = p.stderr.read()
                 if not 'Handshake 10 support' in out:
-                    self.add_warning('RTMPDump: FP 10 patch not present',
-                                     "FlashPlayer 10 Handshake patch not "
+                    self.add_warning_(('RTMPDump: FP 10 patch not present'),
+                                     _("FlashPlayer 10 Handshake patch not "
                                      "found in RTMPDump. "
-                                     "Some streams may not work properly.")
+                                     "Some streams may not work properly."))
                 else:
-                    self.add_success('RTMPDump is available',
-                                     "RTMPDump is installed and it's working "
-                                     "properly")
+                    self.add_success(_('RTMPDump is available'),
+                                     _("RTMPDump is installed and it's working "
+                                     "properly"))
             else:
-                self.add_warning('RTMPDump failed to run',
-                                 "rtmpdump was found, but failed to run. "
+                self.add_warning(_('RTMPDump failed to run'),
+                                 _("rtmpdump was found, but failed to run. "
                                  "Please run rtmpdump from terminal for more "
-                                 "details.")
+                                 "details."))
         except:
-            self.add_warning("RTMPDump doesn't seems to be installed.",
-                             "rtmpdump not found. RTMP streams will be "
-                             "unavailable.")
+            self.add_warning(_("RTMPDump doesn't seems to be installed."),
+                             _("rtmpdump not found. RTMP streams will be "
+                             "unavailable."))
 
         self.do_next_test()
 
@@ -278,39 +278,39 @@ class Diagnostics:
             import gst
             import pygst
             found += 1
-            self.add_success('PyGST is available',
-                             "PyGST was found and GStreamer should be "
-                             "available in TV-Maxe.")
+            self.add_success(_('PyGST is available'),
+                             _("PyGST was found and GStreamer should be "
+                             "available in TV-Maxe."))
         except:
-            self.add_warning('PyGST cannot be imported',
-                             "Seems that GStreamer is either not installed or "
+            self.add_warning(_('PyGST cannot be imported'),
+                             _("Seems that GStreamer is either not installed or "
                              "the corresponding Python bindings are not "
                              "available. Please install proper packages from "
                              "your distribution repositories if you want "
-                             "GStreamer support in TV-Maxe.")
+                             "GStreamer support in TV-Maxe."))
 
         try:
             import vlc
             try:
                 v = vlc.libvlc_get_version().split()[0]
                 if int(v.replace('.', '')) < 110:
-                    self.add_warning("Old libVLC",
-                                     "Your VLC installation is old. At least "
+                    self.add_warning(_("Old libVLC"),
+                                     _("Your VLC installation is old. At least "
                                      "version 1.1.0 is required for TV-Maxe "
-                                     "to work with VLC backend.")
+                                     "to work with VLC backend."))
                 else:
                     found += 1
-                    self.add_success('VLC is available',
-                                     "VLC was found in your system and seems "
-                                     "to be fully functional.")
+                    self.add_success(_('VLC is available'),
+                                     _("VLC was found in your system and seems "
+                                     "to be fully functional."))
             except:
-                self.add_warning('Couldn\'t determine VLC version',
-                                 "VLC was found, but its version couldn't be "
-                                 "determined. VLC backend may not work.")
+                self.add_warning(_('Couldn\'t determine VLC version'),
+                                 _("VLC was found, but its version couldn't be "
+                                 "determined. VLC backend may not work."))
         except:
-            self.add_warning('VLC was not found',
-                             "libVLC was not found; playing streams using "
-                             "VLC-tvmx backend will not be available.")
+            self.add_warning(_('VLC was not found'),
+                             _("libVLC was not found; playing streams using "
+                             "VLC-tvmx backend will not be available."))
 
         try:
             p = subprocess.Popen(
@@ -321,34 +321,34 @@ class Diagnostics:
             p.wait()
             if not p.poll():
                 found += 1
-                self.add_success(
-                    'MPlayer is available',
-                    "MPlayer was found and should be available as TV-Maxe "
-                    "backend."
+                self.add_success(_(
+                    'MPlayer is available'),
+                    _("MPlayer was found and should be available as TV-Maxe "
+                    "backend.")
                 )
             else:
-                self.add_warning('MPlayer error',
-                                 "MPlayer was found but doesn't seems to be "
+                self.add_warning(_('MPlayer error'),
+                                 _("MPlayer was found but doesn't seems to be "
                                  "working. Please run mplayer from Terminal "
-                                 "for more details.")
+                                 "for more details."))
         except:
-            self.add_warning('MPLayer not found',
-                             "MPlayer was not found; playing streams using "
-                             "MPlayer as backend will not be available.")
+            self.add_warning(_('MPLayer not found'),
+                             _("MPlayer was not found; playing streams using "
+                             "MPlayer as backend will not be available."))
 
         if not found:
-            self.add_error('No backend available',
-                           "No backend found. Playing streams will not work.")
+            self.add_error(_('No backend available'),
+                           _("No backend found. Playing streams will not work."))
         self.do_next_test()
 
     def test_de(self):
         de = tools.guess_de()
         if de:
-            self.add_success('Desktop environment detected as {0}'.format(de),
+            self.add_success(_('Desktop environment detected as {0}').format(de),
                              '')
         else:
-            self.add_warning('Desktop environment couldn\'t be detected.',
-                             "Auto power off feature may not work.")
+            self.add_warning(_('Desktop environment couldn\'t be detected.'),
+                             _("Auto power off feature may not work."))
 
         self.do_next_test()
 
@@ -360,16 +360,16 @@ class Diagnostics:
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE
             )
-            self.add_success(
-                'LIRC was found',
-                "LIRC was found installed in your system. Please configure "
+            self.add_success(_(
+                'LIRC was found'),
+                _("LIRC was found installed in your system. Please configure "
                 "your IR remote controller if you want to use it with "
-                "TV-Maxe.")
+                "TV-Maxe."))
         except:
-            self.add_warning('LIRC was not found',
-                             "IR remote support is disabled. Please install "
+            self.add_warning(_('LIRC was not found'),
+                             _("IR remote support is disabled. Please install "
                              "LIRC if you got an IR remote controller and you "
-                             "want to use it with TV-Maxe.")
+                             "want to use it with TV-Maxe."))
 
         self.do_next_test()
 
@@ -383,11 +383,11 @@ class Diagnostics:
                 stderr=subprocess.PIPE
             )
         except:
-            self.add_error(
-                'FFMPEG not available',
-                'FFMPEG doesn\'t seems to be installed. '
+            self.add_error(_(
+                'FFMPEG not available'),
+                _('FFMPEG doesn\'t seems to be installed. '
                 'Please install it and make sure that the binary is located '
-                'in one of the $PATH directories.')
+                'in one of the $PATH directories.'))
             error = True
 
         if not error:
@@ -405,10 +405,10 @@ class Diagnostics:
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             s.connect((host, int(port)))
         except:
-            self.add_error(
-                "Cannot connect to Petrodava",
-                "TV-Maxe couldn't connect to Petrodava. This could be because "
-                "of your network conenction or the Petrodava servers are down."
+            self.add_error(_(
+                "Cannot connect to Petrodava"),
+                _("TV-Maxe couldn't connect to Petrodava. This could be because "
+                "of your network conenction or the Petrodava servers are down.")
             )
 
         p = PetrodavaPacket()
@@ -418,17 +418,17 @@ class Diagnostics:
 
         header_check = s.recv(4)
         if header_check == 'TVMX':
-            self.add_success(
-                "Petrodava is working",
-                "Your connection with Petrodava server is working. "
+            self.add_success(_(
+                "Petrodava is working"),
+                _("Your connection with Petrodava server is working. "
                 "To connect via Petrodava please enable the option in "
-                "TV-Maxe's settings dialog."
+                "TV-Maxe's settings dialog.")
             )
         else:
-            self.add_error(
-                "Petrodava is not working",
-                "TV-Maxe connected to Petrodava, but received an invalid "
-                "response."
+            self.add_error(_(
+                "Petrodava is not working"),
+                _("TV-Maxe connected to Petrodava, but received an invalid "
+                "response.")
             )
 
         self.do_next_test()

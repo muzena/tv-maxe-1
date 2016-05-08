@@ -1,14 +1,11 @@
-# Croatian translation of freetuxtv.
-# gogo <trebelnik2@@gmail.com>, 2016.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: tv-maxe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-07 18:27+0200\n"
+"POT-Creation-Date: 2016-05-08 23:05+0200\n"
 "PO-Revision-Date: \n"
-"Last-Translator: gogo <trebelnik2@@gmail.com>\n"
-"Language-Team: hr@li.org\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,6 +13,364 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Poedit 1.8.7.1\n"
+
+#: ../diagnostics.py:50
+msgid "Diagnostics started at "
+msgstr "Dijagnostika pokrenuta u "
+
+#: ../diagnostics.py:66
+msgid "Diagnostics finished."
+msgstr "Dijagnostika završena."
+
+#: ../diagnostics.py:117
+msgid "Tests finished."
+msgstr "Test završen."
+
+#: ../diagnostics.py:124
+msgid "Internet connection OK"
+msgstr "Internet povezivanje je u redu."
+
+#: ../diagnostics.py:125
+msgid ""
+"tv-maxe.org was successfully contacted. Loading channelists and TV guides "
+"should work properly."
+msgstr ""
+"tv-maxe.org je uspješno kontaktiran. Učitavanje popisa programa i EPG - TV "
+"programskog vodiča bi trebalo ispravno raditi."
+
+#: ../diagnostics.py:129
+msgid "Unexpected data"
+msgstr "Neočekivani podaci"
+
+#: ../diagnostics.py:130
+msgid ""
+"tv-maxe.org could be contacted, but the received data is invalid. Internet "
+"connection may not work properly."
+msgstr ""
+"tv-maxe.org se može kontaktirati, ali primljeni podaci su neispravni. "
+"Pristup internet možda nije ispravan."
+
+#: ../diagnostics.py:134
+msgid "Cannot connect to host"
+msgstr "Nemoguće povezivanje s poslužiteljem"
+
+#: ../diagnostics.py:135
+msgid "Couldn't reach tv-maxe.org. Please check your internet connection."
+msgstr "Nemoguć pristup tv-maxe.org. Provjerite vaš pristup internetu."
+
+#: ../diagnostics.py:168
+msgid "Port 3912 error"
+msgstr "Greška ulaza 3912"
+
+#: ../diagnostics.py:169
+msgid "Port 3912 cannot be reached. SopCast streams may be unavailable."
+msgstr ""
+"Ulazu 3912 se ne može pristupiti. SopCast streamovi su možda nedostupni."
+
+#: ../diagnostics.py:181
+msgid "Port 1935 error"
+msgstr "Greška ulaza 1935"
+
+#: ../diagnostics.py:182
+msgid "Port 3915 cannot be reached. RTMP streams may be unavailable."
+msgstr "Ulazu 3912 se ne može pristupiti. RTMP streamovi su možda nedostupni."
+
+#: ../diagnostics.py:194
+msgid "Port 554 error"
+msgstr "Greška ulaza 554"
+
+#: ../diagnostics.py:195
+msgid "Port 554 cannot be reached. RTSP streams may be unavailable."
+msgstr "Ulazu 3912 se ne može pristupiti. RTSP streamovi su možda nedostupni."
+
+#: ../diagnostics.py:201
+msgid "Some ports are unavailable"
+msgstr "Neki ulazi su nedostupni"
+
+#: ../diagnostics.py:202
+#, python-brace-format
+msgid ""
+"The following ports were found with problems. Please make sure that there's "
+"no other applications using this ports:\n"
+"\n"
+"{0}\n"
+"\n"
+"Tip: you could use Petrodava to bypass port restrictions."
+msgstr ""
+"Sljedeći ulazi imaju probleme. Pobrinite se da druge aplikacije ne koriste "
+"ove ulaze:\n"
+"\n"
+"{0}\n"
+"\n"
+"Savjet: možete koristit Petrodava za zaobilaženje ograničenja."
+
+#: ../diagnostics.py:208
+msgid "All required ports seems to be ok"
+msgstr "Izgleda da su svi ulazi u redu."
+
+#: ../diagnostics.py:209
+msgid ""
+"Seems that all the required ports are free and also you don't have any "
+"restrictions for ports from outside."
+msgstr ""
+"Izgleda da su svi potrebni ulazi slobodni i stoga nemate nikakvih vanjskih "
+"ograničenja za ulaze."
+
+#: ../diagnostics.py:226
+msgid "SopCast is available"
+msgstr "SopCast je dostupan"
+
+#: ../diagnostics.py:227
+msgid "SopCast binary was found and seems to work fine."
+msgstr "SopCast izvršna datoteka je pronađena i čini se da je u redu."
+
+#: ../diagnostics.py:230
+msgid "SopCast failed to run"
+msgstr "SopCast je nemoguće pokrenuti"
+
+#: ../diagnostics.py:231
+#, python-brace-format
+msgid ""
+"SopCast binary was found but failed to run. Please run {0} from Terminal for "
+"more details."
+msgstr ""
+"SopCast izvršna datoteka je pronađena ali se ne može pokrenuti. Pokrenite "
+"{0} iz Terminala za više pojedinosti."
+
+#: ../diagnostics.py:239
+msgid "SopCast doesn't seems to be installed"
+msgstr "Izgleda da SopCast nije instaliran"
+
+#: ../diagnostics.py:240
+msgid "SopCast binary not found. sop:// streams will not be available."
+msgstr ""
+"SopCast izvršna datoteka nije pronađena. sop:// streamovi neće biti dostupni."
+
+#: ../diagnostics.py:256
+msgid ""
+"FlashPlayer 10 Handshake patch not found in RTMPDump. Some streams may not "
+"work properly."
+msgstr ""
+"FlashPlayer 10 Handshake zakrpa nije pronađena u RTMPDumpu. Neki streamovi "
+"možda neće raditi ispravno."
+
+#: ../diagnostics.py:260
+msgid "RTMPDump is available"
+msgstr "RTMPDump je dostupan"
+
+#: ../diagnostics.py:261
+msgid "RTMPDump is installed and it's working properly"
+msgstr "RTMPDump je instaliran i radi ispravno"
+
+#: ../diagnostics.py:264
+msgid "RTMPDump failed to run"
+msgstr "Neuspjelo pokretanje RTMPDumpa"
+
+#: ../diagnostics.py:265
+msgid ""
+"rtmpdump was found, but failed to run. Please run rtmpdump from terminal for "
+"more details."
+msgstr ""
+"rtmpdump je pronađen, ali se ne može pokrenuti. Pokrenite rtmpdump iz "
+"terminala za više pojedinosti."
+
+#: ../diagnostics.py:269
+msgid "RTMPDump doesn't seems to be installed."
+msgstr "Izgleda da RTMPDump nije instaliran."
+
+#: ../diagnostics.py:270
+msgid "rtmpdump not found. RTMP streams will be unavailable."
+msgstr "rtmpdump nije pronađen. RTMP streamovi će biti nedostupni."
+
+#: ../diagnostics.py:281
+msgid "PyGST is available"
+msgstr "PyGST je dostupan"
+
+#: ../diagnostics.py:282
+msgid "PyGST was found and GStreamer should be available in TV-Maxe."
+msgstr "PyGST je pronađen i GStreamer bi trebao biti dostupan u TV-Maxu."
+
+#: ../diagnostics.py:285
+msgid "PyGST cannot be imported"
+msgstr "PyGST se ne može uvesti"
+
+#: ../diagnostics.py:286
+msgid ""
+"Seems that GStreamer is either not installed or the corresponding Python "
+"bindings are not available. Please install proper packages from your "
+"distribution repositories if you want GStreamer support in TV-Maxe."
+msgstr ""
+"Čini se da GStreamer ili nije instaliran ili odgovarajući Python paketi nisu "
+"dostupni. Instalirajte odgovarajući paket s repozitorija vaše distiribucije "
+"ako želite da je GStreamer podržan u TV-Maxu."
+
+#: ../diagnostics.py:297
+msgid "Old libVLC"
+msgstr "Zastarjeli libVLC"
+
+#: ../diagnostics.py:298
+msgid ""
+"Your VLC installation is old. At least version 1.1.0 is required for TV-Maxe "
+"to work with VLC backend."
+msgstr ""
+"Vaša VLC instalacija je zastarjela. At least version 1.1.0 is required for "
+"TV-Maxe to work with VLC backend."
+
+#: ../diagnostics.py:303
+msgid "VLC is available"
+msgstr "VLC je dostupan"
+
+#: ../diagnostics.py:304
+msgid "VLC was found in your system and seems to be fully functional."
+msgstr ""
+"VLC je pronađen na vašem sustavu i čini se da je u potpunosti funkcionalan."
+
+#: ../diagnostics.py:307
+msgid "Couldn't determine VLC version"
+msgstr "Nemoguće određivanje VLC inačice"
+
+#: ../diagnostics.py:308
+msgid ""
+"VLC was found, but its version couldn't be determined. VLC backend may not "
+"work."
+msgstr ""
+"VLC je pronađen, ali se njegova inačica ne može odrediti. VLC pozadinki "
+"program možda neće raditi"
+
+#: ../diagnostics.py:311
+msgid "VLC was not found"
+msgstr "VLC nije pronađen"
+
+#: ../diagnostics.py:312
+msgid ""
+"libVLC was not found; playing streams using VLC-tvmx backend will not be "
+"available."
+msgstr ""
+"libVLC nije pronađen; reprodukcija streamova pomoću VLC-tvmx pozadinskog "
+"programa neće biti dostupna."
+
+#: ../diagnostics.py:325
+msgid "MPlayer is available"
+msgstr "MPlayer je dostupan"
+
+#: ../diagnostics.py:326
+msgid "MPlayer was found and should be available as TV-Maxe backend."
+msgstr ""
+"MPlayer je pronađen i trebao bi biti dostupan kao TV-Maxe pozadinski program."
+
+#: ../diagnostics.py:330
+msgid "MPlayer error"
+msgstr "MPlayer greška"
+
+#: ../diagnostics.py:331
+msgid ""
+"MPlayer was found but doesn't seems to be working. Please run mplayer from "
+"Terminal for more details."
+msgstr ""
+"MPlayer je pronađen ali se čini da ne radi. Pokrenite mplayer s Terminala za "
+"više pojedinosti."
+
+#: ../diagnostics.py:335
+msgid "MPLayer not found"
+msgstr "MPLayer nije pronađen"
+
+#: ../diagnostics.py:336
+msgid ""
+"MPlayer was not found; playing streams using MPlayer as backend will not be "
+"available."
+msgstr ""
+"MPlayer nije pronađen; reprodukcija streamova pomoću MPlayera kao "
+"pozadinskog programa neće biti dostupna."
+
+#: ../diagnostics.py:340
+msgid "No backend available"
+msgstr "Nema dostupnog pozadinskog programa"
+
+#: ../diagnostics.py:341
+msgid "No backend found. Playing streams will not work."
+msgstr ""
+"Nema dostupnog pozadinskog programa. Reprodukcija streamova neće raditi"
+
+#: ../diagnostics.py:347
+#, python-brace-format
+msgid "Desktop environment detected as {0}"
+msgstr "{0} radno okruženje je otkriveno"
+
+#: ../diagnostics.py:350
+msgid "Desktop environment couldn't be detected."
+msgstr "Radno okruženje ne može biti otkriveno."
+
+#: ../diagnostics.py:351
+msgid "Auto power off feature may not work."
+msgstr "Značajka samoisključivanja možda ne radi."
+
+#: ../diagnostics.py:364
+msgid "LIRC was found"
+msgstr "LIRC je pronađen"
+
+#: ../diagnostics.py:365
+msgid ""
+"LIRC was found installed in your system. Please configure your IR remote "
+"controller if you want to use it with TV-Maxe."
+msgstr ""
+"LIRC je instaliran na vašem sustavu. Podesite vaš IR daljinski upravljač ako "
+"ga želite koristiti s TV-Maxom."
+
+#: ../diagnostics.py:369
+msgid "LIRC was not found"
+msgstr "LIRC nije pronađen"
+
+#: ../diagnostics.py:370
+msgid ""
+"IR remote support is disabled. Please install LIRC if you got an IR remote "
+"controller and you want to use it with TV-Maxe."
+msgstr ""
+"Podrška za IR daljinski upravljač je onemogućena. Instalirajte LIRC ako "
+"imate IR daljinski upravljač i želite ga koristiti s TV-Maxom."
+
+#: ../diagnostics.py:387
+msgid "FFMPEG not available"
+msgstr "FFMPEG je nedostupan"
+
+#: ../diagnostics.py:388
+msgid ""
+"FFMPEG doesn't seems to be installed. Please install it and make sure that "
+"the binary is located in one of the $PATH directories."
+msgstr ""
+"FFMPEG nije instaliran. Instalirajte ga i pobrinite se da se izvršna "
+"datoteka nalazi u jednoj od putanji $PATH direktorija."
+
+#: ../diagnostics.py:409
+msgid "Cannot connect to Petrodava"
+msgstr "Nemoguće povezivanje s Petrodava"
+
+#: ../diagnostics.py:410
+msgid ""
+"TV-Maxe couldn't connect to Petrodava. This could be because of your network "
+"conenction or the Petrodava servers are down."
+msgstr ""
+"TV-Maxe ne može se povezati s Petrodava. Uzrok tome može biti vaš mrežni "
+"pristup ili Petrodava poslužitelji su nedostupni."
+
+#: ../diagnostics.py:422
+msgid "Petrodava is working"
+msgstr "Petrodava radi"
+
+#: ../diagnostics.py:423
+msgid ""
+"Your connection with Petrodava server is working. To connect via Petrodava "
+"please enable the option in TV-Maxe's settings dialog."
+msgstr ""
+"Vaše povezianje s Petrodava poslužiteljem radi. Za povezivanje putem "
+"Petrodava odaberite mogućnost u TV-Maxe dijalogu postavka."
+
+#: ../diagnostics.py:429
+msgid "Petrodava is not working"
+msgstr "Petrodava ne radi"
+
+#: ../diagnostics.py:430
+msgid "TV-Maxe connected to Petrodava, but received an invalid response."
+msgstr "TV-Maxe je povezan s Petrodava, ali prima neispravan odgovor."
 
 #: ../settingsManager.py:369
 msgid ""
@@ -27,11 +382,11 @@ msgstr ""
 msgid "Configuration error"
 msgstr "Greška podešavanja"
 
-#: ../trayIcon.py:70 ../tvmaxe.py:2568 ../tvmaxe.py:2590
+#: ../trayIcon.py:70 ../tvmaxe.py:2564 ../tvmaxe.py:2586
 msgid "Show TV-MAXE"
 msgstr "Prikaži TV-MAXE"
 
-#: ../trayIcon.py:77 ../tvmaxe.glade.h:47 ../tvmaxe.py:2575 ../tvmaxe.py:2597
+#: ../trayIcon.py:77 ../tvmaxe.glade.h:47 ../tvmaxe.py:2571 ../tvmaxe.py:2593
 msgid "Hide TV-MAXE"
 msgstr "Sakrij TV-MAXE"
 
@@ -111,7 +466,7 @@ msgstr "16:10"
 msgid "2.35:1"
 msgstr "2.35:1"
 
-#: ../tvmaxe.glade.h:20 ../tvmaxe.py:2900
+#: ../tvmaxe.glade.h:20 ../tvmaxe.py:2896
 msgid "All"
 msgstr "Svi"
 
@@ -163,7 +518,7 @@ msgstr "Snimi ovo"
 msgid "Select stream"
 msgstr "Odaberi stream"
 
-#: ../tvmaxe.glade.h:36
+#: ../tvmaxe.glade.h:36 ../tvmaxe.py:832
 msgid "Record stream"
 msgstr "Snimi stream"
 
@@ -299,7 +654,7 @@ msgstr ""
 "<b>Zakazano vrijeme isključivanja je pokrenuto. <a href=\"cancel\">Kliknite "
 "ovdje za prestanak isključivanja</a></b>"
 
-#: ../tvmaxe.glade.h:70 .././tv-maxe.desktop:9
+#: ../tvmaxe.glade.h:70
 msgid "TV-MAXE"
 msgstr "TV-MAXE"
 
@@ -311,7 +666,7 @@ msgstr "_TV-maxe"
 msgid "List"
 msgstr "Popis"
 
-#: ../tvmaxe.glade.h:73 ../tvmaxe.py:2050
+#: ../tvmaxe.glade.h:73 ../tvmaxe.py:2046
 msgid "Add a TV channel"
 msgstr "Dodaj ТV program"
 
@@ -387,11 +742,11 @@ msgstr ""
 msgid "label"
 msgstr "oznaka"
 
-#: ../tvmaxe.glade.h:91 ../tvmaxe.py:1884 ../tvmaxe.py:1941
+#: ../tvmaxe.glade.h:91 ../tvmaxe.py:1880 ../tvmaxe.py:1937
 msgid "Press OK or middle-click to play this channel"
 msgstr "Pritisnite OK ili srednji klik za reprodukciju ovog programa"
 
-#: ../tvmaxe.glade.h:93 ../tvmaxe.py:1976
+#: ../tvmaxe.glade.h:93 ../tvmaxe.py:1972
 #, no-c-format, python-format
 msgid "%s left..."
 msgstr "%s preostalo..."
@@ -452,7 +807,7 @@ msgstr "Dostupnost:"
 msgid "TV-Guide"
 msgstr "EPG - TV programski vodič"
 
-#: ../tvmaxe.glade.h:108 ../tvmaxe.py:2722
+#: ../tvmaxe.glade.h:108 ../tvmaxe.py:2718
 msgid "Report as broken"
 msgstr "Prijavi kao neispravno"
 
@@ -743,7 +1098,7 @@ msgstr ""
 "Sopcast modul je prestao s radom. To znači da stream više nije dostupan ili "
 "da se 'sp-sc-auth' proces ne može pokrenuti."
 
-#: ../tvmaxe.glade.h:183
+#: ../tvmaxe.glade.h:183 ../tvmaxe.py:1690
 msgid "Closing in 5 seconds..."
 msgstr "Zatvaranje za 5 sekundi..."
 
@@ -829,502 +1184,207 @@ msgstr ""
 msgid "Connecting..."
 msgstr "Povezivanje..."
 
-#: ../tvmaxe.py:206 ../tvmaxe.py:1601
+#: ../tvmaxe.py:202 ../tvmaxe.py:1597
 msgid "Ready"
 msgstr "Za gledanje ili slušanje odaberite program s popisa"
 
-#: ../tvmaxe.py:279 ../tvmaxe.py:515 ../tvmaxe.py:2369
+#: ../tvmaxe.py:275 ../tvmaxe.py:511 ../tvmaxe.py:2365
 #, python-format
 msgid "Total: %s channels in %s subscriptions"
 msgstr "Ukupno: %s programa %s pretplata"
 
-#: ../tvmaxe.py:885 ../tvmaxe.py:1011
+#: ../tvmaxe.py:279
+msgid "Very high"
+msgstr "Vrlo visoka"
+
+#: ../tvmaxe.py:280
+msgid "High"
+msgstr "Visoka"
+
+#: ../tvmaxe.py:281
+msgid "Normal"
+msgstr "Normalna"
+
+#: ../tvmaxe.py:282
+msgid "Low"
+msgstr "Niska"
+
+#: ../tvmaxe.py:283
+msgid "Very low"
+msgstr "Vrlo niska"
+
+#: ../tvmaxe.py:764 ../tvmaxe.py:846
+msgid "Record"
+msgstr "Snimi"
+
+#: ../tvmaxe.py:881 ../tvmaxe.py:1007
 #, python-format
 msgid "Loading: %s"
 msgstr "Učitavanje: %s"
 
-#: ../tvmaxe.py:888 ../tvmaxe.py:927 ../tvmaxe.py:1014
+#: ../tvmaxe.py:884 ../tvmaxe.py:923 ../tvmaxe.py:1010
 msgid "Loading "
 msgstr "Učitavanje"
 
-#: ../tvmaxe.py:921
+#: ../tvmaxe.py:917
 msgid "(Retrying) Loading "
 msgstr "Učitavanje (ponovni pokušaj) "
 
-#: ../tvmaxe.py:923
+#: ../tvmaxe.py:919
 msgid "(Retrying) Loading: "
 msgstr "Učitavanje (ponovni pokušaj): "
 
-#: ../tvmaxe.py:1051 ../tvmaxe.py:1098
+#: ../tvmaxe.py:1047 ../tvmaxe.py:1094
 #, python-format
 msgid "Recording: %s"
 msgstr "Snimanje: %s"
 
-#: ../tvmaxe.py:1055 ../tvmaxe.py:1102
+#: ../tvmaxe.py:1051 ../tvmaxe.py:1098
 msgid "(Retrying) Recording "
 msgstr "Snimanje (ponovni pokušaj) "
 
-#: ../tvmaxe.py:1057 ../tvmaxe.py:1104
+#: ../tvmaxe.py:1053 ../tvmaxe.py:1100
 msgid "(Retrying) Recording: "
 msgstr "Snimanje (ponovni pokušaj): "
 
-#: ../tvmaxe.py:1061 ../tvmaxe.py:1108
+#: ../tvmaxe.py:1057 ../tvmaxe.py:1104
 msgid "Recording "
 msgstr "Snimanje "
 
-#: ../tvmaxe.py:1175 ../tvmaxe.py:1177
+#: ../tvmaxe.py:1171 ../tvmaxe.py:1173
 msgid "Playing: "
 msgstr "Reprodukcija: "
 
-#: ../tvmaxe.py:1178 ../tvmaxe.py:1599
+#: ../tvmaxe.py:1174 ../tvmaxe.py:1595
 msgid "Playing "
 msgstr "Gledate program: "
 
-#: ../tvmaxe.py:1247
+#: ../tvmaxe.py:1243
 msgid "Stopped"
 msgstr "Zaustavljeno"
 
-#: ../tvmaxe.py:1533
+#: ../tvmaxe.py:1529
 #, python-format
 msgid "Languages: %s"
 msgstr "Jezici: %s"
 
-#: ../tvmaxe.py:1605 ../tvmaxe.py:1612
+#: ../tvmaxe.py:1601 ../tvmaxe.py:1608
 msgid "Loading... "
 msgstr "Učitavanje..."
 
-#: ../tvmaxe.py:1666
+#: ../tvmaxe.py:1662
 msgid "NO SIGNAL"
 msgstr "NEMA SIGNALA"
 
-#: ../tvmaxe.py:1669
+#: ../tvmaxe.py:1665
 msgid "This channel seems to be unavailable."
 msgstr "Izgleda kako je ovaj program nedostupan."
 
-#: ../tvmaxe.py:1670
+#: ../tvmaxe.py:1666
 msgid "Please try with another available source (if any)"
 msgstr "Probajte s drugim dostupnim izvorom (ako je dostupan)"
 
-#: ../tvmaxe.py:1671
+#: ../tvmaxe.py:1667
 msgid "or try again later."
 msgstr "ili pokušajte kasnije."
 
-#: ../tvmaxe.py:1675
+#: ../tvmaxe.py:1671
 msgid "Reported error: "
 msgstr "Prijavljena greška: "
 
-#: ../tvmaxe.py:2053
+#: ../tvmaxe.py:1682
+#, python-brace-format
+msgid "Closing in {0} seconds..."
+msgstr "Zatvaranje {0} sekundi..."
+
+#: ../tvmaxe.py:2049
 msgid "Add a Radio channel"
 msgstr "Dodaj radio program"
 
-#: ../tvmaxe.py:2224 ../tvmaxe.py:2287
+#: ../tvmaxe.py:2220 ../tvmaxe.py:2283
 msgid "This channel already exists"
 msgstr "Ovaj program već postoji"
 
-#: ../tvmaxe.py:2225 ../tvmaxe.py:2237 ../tvmaxe.py:2263 ../tvmaxe.py:2288
-#: ../tvmaxe.py:2301 ../tvmaxe.py:2326 ../tvmaxe.py:2436
+#: ../tvmaxe.py:2221 ../tvmaxe.py:2233 ../tvmaxe.py:2259 ../tvmaxe.py:2284
+#: ../tvmaxe.py:2297 ../tvmaxe.py:2322 ../tvmaxe.py:2432
 msgid "Error"
 msgstr "Greška"
 
-#: ../tvmaxe.py:2236 ../tvmaxe.py:2300
+#: ../tvmaxe.py:2232 ../tvmaxe.py:2296
 msgid "Name and URL required!"
 msgstr "Potreban je naziv i URL!"
 
-#: ../tvmaxe.py:2262 ../tvmaxe.py:2325
+#: ../tvmaxe.py:2258 ../tvmaxe.py:2321
 msgid "Channel cannot be added. Are you sure that the URL is correct?"
 msgstr "Program se ne može dodati. Je li ovaj URL ispravan?"
 
-#: ../tvmaxe.py:2437
+#: ../tvmaxe.py:2433
 msgid "Cannot fetch the channel list. Aborting..."
 msgstr "Nemoguće je preuzimanje popisa programa. Prekidam..."
 
-#: ../tvmaxe.py:2794
+#: ../tvmaxe.py:2790
 msgid "appears to be broken"
 msgstr "čini se da je neispravno"
 
-#: ../tvmaxe.py:2801
+#: ../tvmaxe.py:2797
 msgid "Reported"
 msgstr "Prijavljeno"
 
-#: ../tvmaxe.py:2817
+#: ../tvmaxe.py:2813
 msgid "Select image file..."
 msgstr "Odaberi datoteku slike..."
 
-#: ../tvmaxe.py:2826
+#: ../tvmaxe.py:2822
 msgid "Images"
 msgstr "Slike"
 
-#: ../tvmaxe.py:2935
+#: ../tvmaxe.py:2931
 msgid "Select subscription file..."
 msgstr "Odaberi datoteku pretplate..."
 
-#: ../tvmaxe.py:2954
+#: ../tvmaxe.py:2950
 msgid "Save current channellist..."
 msgstr "Spremi trenutni popis programa..."
 
-#: ../tvmaxe.py:3023
+#: ../tvmaxe.py:3019
 msgid "Channellist was successfully saved."
 msgstr "Popis programa je uspješno spremljen."
 
-#: ../tvmaxe.py:3032
+#: ../tvmaxe.py:3028
 msgid "Sunday"
 msgstr "Nedjelja"
 
-#: ../tvmaxe.py:3033
+#: ../tvmaxe.py:3029
 msgid "Monday"
 msgstr "Ponedjeljak"
 
-#: ../tvmaxe.py:3034
+#: ../tvmaxe.py:3030
 msgid "Tuesday"
 msgstr "Utorak"
 
-#: ../tvmaxe.py:3035
+#: ../tvmaxe.py:3031
 msgid "Wednesday"
 msgstr "Srijeda"
 
-#: ../tvmaxe.py:3036
+#: ../tvmaxe.py:3032
 msgid "Thursday"
 msgstr "Četvrtak"
 
-#: ../tvmaxe.py:3037
+#: ../tvmaxe.py:3033
 msgid "Friday"
 msgstr "Petak"
 
-#: ../tvmaxe.py:3038
+#: ../tvmaxe.py:3034
 msgid "Saturday"
 msgstr "Subota"
 
-#: .././tv-maxe.desktop:10
-msgid "TV for Linux sistem"
-msgstr "TV za Linux operativne sustave"
-
-#: .././tv-maxe.desktop:12
-msgid "Televiziune gratis pentru sistemul tău Linux."
-msgstr "Gledajte besplatno TV na vašem Linuxu sustavu."
-
-#: .././tv-maxe.desktop:17
-msgid "TV;Television;Programs;channels;HD;HD channels;"
-msgstr "TV;Televizija;Programi;programi;HD;HD programi;"
-
-#~ msgid "Diagnostics started at "
-#~ msgstr "Dijagnostika pokrenuta u "
-
-#~ msgid "Diagnostics finished."
-#~ msgstr "Dijagnostika završena."
-
-#~ msgid "Tests finished."
-#~ msgstr "Test završen."
-
-#~ msgid "Internet connection OK"
-#~ msgstr "Internet povezivanje je u redu."
-
-#~ msgid ""
-#~ "tv-maxe.org was successfully contacted. Loading channelists and TV guides "
-#~ "should work properly."
-#~ msgstr ""
-#~ "tv-maxe.org je uspješno kontaktiran. Učitavanje popisa programa i EPG - "
-#~ "TV programskog vodiča bi trebalo ispravno raditi."
-
-#~ msgid "Unexpected data"
-#~ msgstr "Neočekivani podaci"
-
-#~ msgid ""
-#~ "tv-maxe.org could be contacted, but the received data is invalid. "
-#~ "Internet connection may not work properly."
-#~ msgstr ""
-#~ "tv-maxe.org se može kontaktirati, ali primljeni podaci su neispravni. "
-#~ "Pristup internet možda nije ispravan."
-
-#~ msgid "Cannot connect to host"
-#~ msgstr "Nemoguće povezivanje s poslužiteljem"
-
-#~ msgid "Couldn't reach tv-maxe.org. Please check your internet connection."
-#~ msgstr "Nemoguć pristup tv-maxe.org. Provjerite vaš pristup internetu."
-
-#~ msgid "Port 3912 error"
-#~ msgstr "Greška ulaza 3912"
-
-#~ msgid "Port 3912 cannot be reached. SopCast streams may be unavailable."
-#~ msgstr ""
-#~ "Ulazu 3912 se ne može pristupiti. SopCast streamovi su možda nedostupni."
-
-#~ msgid "Port 1935 error"
-#~ msgstr "Greška ulaza 1935"
-
-#~ msgid "Port 3915 cannot be reached. RTMP streams may be unavailable."
-#~ msgstr ""
-#~ "Ulazu 3912 se ne može pristupiti. RTMP streamovi su možda nedostupni."
-
-#~ msgid "Port 554 error"
-#~ msgstr "Greška ulaza 554"
-
-#~ msgid "Port 554 cannot be reached. RTSP streams may be unavailable."
-#~ msgstr ""
-#~ "Ulazu 3912 se ne može pristupiti. RTSP streamovi su možda nedostupni."
-
-#~ msgid "Some ports are unavailable"
-#~ msgstr "Neki ulazi su nedostupni"
-
-#~ msgid ""
-#~ "The following ports were found with problems. Please make sure that "
-#~ "there's no other applications using this ports:\n"
-#~ "\n"
-#~ "{0}\n"
-#~ "\n"
-#~ "Tip: you could use Petrodava to bypass port restrictions."
-#~ msgstr ""
-#~ "Sljedeći ulazi imaju probleme. Pobrinite se da druge aplikacije ne "
-#~ "koriste ove ulaze:\n"
-#~ "\n"
-#~ "{0}\n"
-#~ "\n"
-#~ "Savjet: možete koristit Petrodava za zaobilaženje ograničenja."
-
-#~ msgid "All required ports seems to be ok"
-#~ msgstr "Izgleda da su svi ulazi u redu."
-
-#~ msgid ""
-#~ "Seems that all the required ports are free and also you don't have any "
-#~ "restrictions for ports from outside."
-#~ msgstr ""
-#~ "Izgleda da su svi potrebni ulazi slobodni i stoga nemate nikakvih "
-#~ "vanjskih ograničenja za ulaze."
-
-#~ msgid "SopCast is available"
-#~ msgstr "SopCast je dostupan"
-
-#~ msgid "SopCast binary was found and seems to work fine."
-#~ msgstr "SopCast izvršna datoteka je pronađena i čini se da je u redu."
-
-#~ msgid "SopCast failed to run"
-#~ msgstr "SopCast je nemoguće pokrenuti"
-
-#~ msgid ""
-#~ "SopCast binary was found but failed to run. Please run {0} from Terminal "
-#~ "for more details."
-#~ msgstr ""
-#~ "SopCast izvršna datoteka je pronađena ali se ne može pokrenuti. Pokrenite "
-#~ "{0} iz Terminala za više pojedinosti."
-
-#~ msgid "SopCast doesn't seems to be installed"
-#~ msgstr "Izgleda da SopCast nije instaliran"
-
-#~ msgid "SopCast binary not found. sop:// streams will not be available."
-#~ msgstr ""
-#~ "SopCast izvršna datoteka nije pronađena. sop:// streamovi neće biti "
-#~ "dostupni."
-
-#~ msgid ""
-#~ "FlashPlayer 10 Handshake patch not found in RTMPDump. Some streams may "
-#~ "not work properly."
-#~ msgstr ""
-#~ "FlashPlayer 10 Handshake zakrpa nije pronađena u RTMPDumpu. Neki "
-#~ "streamovi možda neće raditi ispravno."
-
-#~ msgid "RTMPDump is available"
-#~ msgstr "RTMPDump je dostupan"
-
-#~ msgid "RTMPDump is installed and it's working properly"
-#~ msgstr "RTMPDump je instaliran i radi ispravno"
-
-#~ msgid "RTMPDump failed to run"
-#~ msgstr "Neuspjelo pokretanje RTMPDumpa"
-
-#~ msgid ""
-#~ "rtmpdump was found, but failed to run. Please run rtmpdump from terminal "
-#~ "for more details."
-#~ msgstr ""
-#~ "rtmpdump je pronađen, ali se ne može pokrenuti. Pokrenite rtmpdump iz "
-#~ "terminala za više pojedinosti."
-
-#~ msgid "RTMPDump doesn't seems to be installed."
-#~ msgstr "Izgleda da RTMPDump nije instaliran."
-
-#~ msgid "rtmpdump not found. RTMP streams will be unavailable."
-#~ msgstr "rtmpdump nije pronađen. RTMP streamovi će biti nedostupni."
-
-#~ msgid "PyGST is available"
-#~ msgstr "PyGST je dostupan"
-
-#~ msgid "PyGST was found and GStreamer should be available in TV-Maxe."
-#~ msgstr "PyGST je pronađen i GStreamer bi trebao biti dostupan u TV-Maxu."
-
-#~ msgid "PyGST cannot be imported"
-#~ msgstr "PyGST se ne može uvesti"
-
-#~ msgid ""
-#~ "Seems that GStreamer is either not installed or the corresponding Python "
-#~ "bindings are not available. Please install proper packages from your "
-#~ "distribution repositories if you want GStreamer support in TV-Maxe."
-#~ msgstr ""
-#~ "Čini se da GStreamer ili nije instaliran ili odgovarajući Python paketi "
-#~ "nisu dostupni. Instalirajte odgovarajući paket s repozitorija vaše "
-#~ "distiribucije ako želite da je GStreamer podržan u TV-Maxu."
-
-#~ msgid "Old libVLC"
-#~ msgstr "Zastarjeli libVLC"
-
-#~ msgid ""
-#~ "Your VLC installation is old. At least version 1.1.0 is required for TV-"
-#~ "Maxe to work with VLC backend."
-#~ msgstr ""
-#~ "Vaša VLC instalacija je zastarjela. At least version 1.1.0 is required "
-#~ "for TV-Maxe to work with VLC backend."
-
-#~ msgid "VLC is available"
-#~ msgstr "VLC je dostupan"
-
-#~ msgid "VLC was found in your system and seems to be fully functional."
-#~ msgstr ""
-#~ "VLC je pronađen na vašem sustavu i čini se da je u potpunosti "
-#~ "funkcionalan."
-
-#~ msgid "Couldn't determine VLC version"
-#~ msgstr "Nemoguće određivanje VLC inačice"
-
-#~ msgid ""
-#~ "VLC was found, but its version couldn't be determined. VLC backend may "
-#~ "not work."
-#~ msgstr ""
-#~ "VLC je pronađen, ali se njegova inačica ne može odrediti. VLC pozadinki "
-#~ "program možda neće raditi"
-
-#~ msgid "VLC was not found"
-#~ msgstr "VLC nije pronađen"
-
-#~ msgid ""
-#~ "libVLC was not found; playing streams using VLC-tvmx backend will not be "
-#~ "available."
-#~ msgstr ""
-#~ "libVLC nije pronađen; reprodukcija streamova pomoću VLC-tvmx pozadinskog "
-#~ "programa neće biti dostupna."
-
-#~ msgid "MPlayer is available"
-#~ msgstr "MPlayer je dostupan"
-
-#~ msgid "MPlayer was found and should be available as TV-Maxe backend."
-#~ msgstr ""
-#~ "MPlayer je pronađen i trebao bi biti dostupan kao TV-Maxe pozadinski "
-#~ "program."
-
-#~ msgid "MPlayer error"
-#~ msgstr "MPlayer greška"
-
-#~ msgid ""
-#~ "MPlayer was found but doesn't seems to be working. Please run mplayer "
-#~ "from Terminal for more details."
-#~ msgstr ""
-#~ "MPlayer je pronađen ali se čini da ne radi. Pokrenite mplayer s Terminala "
-#~ "za više pojedinosti."
-
-#~ msgid "MPLayer not found"
-#~ msgstr "MPLayer nije pronađen"
-
-#~ msgid ""
-#~ "MPlayer was not found; playing streams using MPlayer as backend will not "
-#~ "be available."
-#~ msgstr ""
-#~ "MPlayer nije pronađen; reprodukcija streamova pomoću MPlayera kao "
-#~ "pozadinskog programa neće biti dostupna."
-
-#~ msgid "No backend available"
-#~ msgstr "Nema dostupnog pozadinskog programa"
-
-#~ msgid "No backend found. Playing streams will not work."
-#~ msgstr ""
-#~ "Nema dostupnog pozadinskog programa. Reprodukcija streamova neće raditi"
-
-#~ msgid "Desktop environment detected as {0}"
-#~ msgstr "{0} radno okruženje je otkriveno"
-
-#~ msgid "Desktop environment couldn't be detected."
-#~ msgstr "Radno okruženje ne može biti otkriveno."
-
-#~ msgid "Auto power off feature may not work."
-#~ msgstr "Značajka samoisključivanja možda ne radi."
-
-#~ msgid "LIRC was found"
-#~ msgstr "LIRC je pronađen"
-
-#~ msgid ""
-#~ "LIRC was found installed in your system. Please configure your IR remote "
-#~ "controller if you want to use it with TV-Maxe."
-#~ msgstr ""
-#~ "LIRC je instaliran na vašem sustavu. Podesite vaš IR daljinski upravljač "
-#~ "ako ga želite koristiti s TV-Maxom."
-
-#~ msgid "LIRC was not found"
-#~ msgstr "LIRC nije pronađen"
-
-#~ msgid ""
-#~ "IR remote support is disabled. Please install LIRC if you got an IR "
-#~ "remote controller and you want to use it with TV-Maxe."
-#~ msgstr ""
-#~ "Podrška za IR daljinski upravljač je onemogućena. Instalirajte LIRC ako "
-#~ "imate IR daljinski upravljač i želite ga koristiti s TV-Maxom."
-
-#~ msgid "FFMPEG not available"
-#~ msgstr "FFMPEG je nedostupan"
-
-#~ msgid ""
-#~ "FFMPEG doesn't seems to be installed. Please install it and make sure "
-#~ "that the binary is located in one of the $PATH directories."
-#~ msgstr ""
-#~ "FFMPEG nije instaliran. Instalirajte ga i pobrinite se da se izvršna "
-#~ "datoteka nalazi u jednoj od putanji $PATH direktorija."
-
-#~ msgid "Cannot connect to Petrodava"
-#~ msgstr "Nemoguće povezivanje s Petrodava"
-
-#~ msgid ""
-#~ "TV-Maxe couldn't connect to Petrodava. This could be because of your "
-#~ "network conenction or the Petrodava servers are down."
-#~ msgstr ""
-#~ "TV-Maxe ne može se povezati s Petrodava. Uzrok tome može biti vaš mrežni "
-#~ "pristup ili Petrodava poslužitelji su nedostupni."
-
-#~ msgid "Petrodava is working"
-#~ msgstr "Petrodava radi"
-
-#~ msgid ""
-#~ "Your connection with Petrodava server is working. To connect via "
-#~ "Petrodava please enable the option in TV-Maxe's settings dialog."
-#~ msgstr ""
-#~ "Vaše povezianje s Petrodava poslužiteljem radi. Za povezivanje putem "
-#~ "Petrodava odaberite mogućnost u TV-Maxe dijalogu postavka."
-
-#~ msgid "Petrodava is not working"
-#~ msgstr "Petrodava ne radi"
-
-#~ msgid "TV-Maxe connected to Petrodava, but received an invalid response."
-#~ msgstr "TV-Maxe je povezan s Petrodava, ali prima neispravan odgovor."
-
-#~ msgid "Very high"
-#~ msgstr "Vrlo visoka"
-
-#~ msgid "High"
-#~ msgstr "Visoka"
-
-#~ msgid "Normal"
-#~ msgstr "Normalna"
-
-#~ msgid "Low"
-#~ msgstr "Niska"
-
-#~ msgid "Very low"
-#~ msgstr "Vrlo niska"
-
-#~ msgid "Record"
-#~ msgstr "Snimi"
-
-#~ msgid "Closing in {0} seconds..."
-#~ msgstr "Zatvaranje {0} sekundi..."
-
-#~ msgid "Sorry, but this channel does not exists."
-#~ msgstr "Nažalost, ovaj program ne postoji."
-
-#~ msgid "Save recording..."
-#~ msgstr "Spremite snimanje..."
+#: ../tvmaxe.py:3150
+msgid "Sorry, but this channel does not exists."
+msgstr "Nažalost, ovaj program ne postoji."
+
+#: ../tvmaxe.py:3158
+msgid "Save recording..."
+msgstr "Spremite snimanje..."
 
 #~ msgid "Free television for your Linux system."
 #~ msgstr "Gledajte besplatno TV na vašem Linuxu sustavu."
