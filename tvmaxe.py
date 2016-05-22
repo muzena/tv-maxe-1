@@ -1,6 +1,3 @@
-#!/usr/bin/python2
-# -*- coding: utf-8 -*-
-
 import gettext
 import locale
 import gtk.glade
@@ -11,6 +8,10 @@ try:
         os.path.abspath(__file__)), 'lng')
 except:
     LOCALE_PATH = 'lng'
+try:
+    locale.setlocale(locale.LC_ALL, '')
+except:
+    locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 for module in gtk.glade, gettext:
     module.bindtextdomain(GETTEXT_DOMAIN, LOCALE_PATH)
     module.textdomain(GETTEXT_DOMAIN)
@@ -32,7 +33,7 @@ import tempfile
 import pygtk
 import gobject
 import gtk
-#import dbus
+import dbus
 import subprocess
 import threading
 import urllib2
@@ -236,7 +237,7 @@ class TVMaxe:
         self.autoplay_channel = None
         self.autoplay_url = None
         self.recordingMode = False
-        #self.inhibition = None
+        self.inhibition = None
         self.abonamente = self.settingsManager.getSubscriptions()
         wsize = self.settingsManager.getWindowSize()
         self.gui.get_object('window1').resize(wsize[0], wsize[1])
@@ -292,7 +293,7 @@ class TVMaxe:
         self.Scheduler = Scheduler(os.path.abspath(__file__), self)
         self.readTheme()
         self.buildComboDays()
-        #self.powerManager = dbus.SessionBus().get_object("org.freedesktop.PowerManagement", "/org/freedesktop/PowerManagement/Inhibit")
+        self.powerManager = dbus.SessionBus().get_object("org.freedesktop.PowerManagement", "/org/freedesktop/PowerManagement/Inhibit")
         self.SocketServer = socketserver.SocketServer(self)
         self.infrared = irwatch.Main({
                 "playpause": self.playpause,
@@ -898,7 +899,7 @@ class TVMaxe:
                 self.progressbarPulse = None
             self.progressbarPulse = gobject.timeout_add(
                 400, self.updateProgressbar, protocol)
-            #self.inhibition = self.powerManager.Inhibit("TV-Maxe", "Playing {0}".format(self.currentChannel.name))
+            self.inhibition = self.powerManager.Inhibit("TV-Maxe", "Playing {0}".format(self.currentChannel.name))
         gobject.idle_add(self.applyVideoSettings)
 
     def playRadioChannel(self, channel, index=None):
@@ -944,7 +945,7 @@ class TVMaxe:
                 self.progressbarPulse = None
             self.progressbarPulse = gobject.timeout_add(
                 400, self.updateProgressbar, protocol)
-            #self.inhibition = self.powerManager.Inhibit("TV-Maxe", "Playing {0}".format(self.currentChannel.name))
+            self.inhibition = self.powerManager.Inhibit("TV-Maxe", "Playing {0}".format(self.currentChannel.name))
 
     def playURL(self, url):
         self.stop(None)
@@ -1159,8 +1160,8 @@ class TVMaxe:
         else:
             self.currentChannel = None
             self.stopCallback()
-        #if self.inhibition:
-         #   self.powerManager.UnInhibit(self.inhibition)
+        if self.inhibition:
+            self.powerManager.UnInhibit(self.inhibition)
 
     def playCallback(self):
         gobject.idle_add(self.do_playCallback)
